@@ -78,3 +78,8 @@ table td > span.stage {
 .hg-logo{
 	max-width: 10rem;
 }
+@media (max-width: 768px) {
+	body {
+	    background-attachment: scroll;
+	}
+}
