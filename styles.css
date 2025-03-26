@@ -51,6 +51,9 @@ table td > span.stage {
   display: block;
   width: 100%;
 }
+a {
+  color: #BA0051;
+}
 .platform-one {
   background-color: #BA0051;
   color: #FFF;
