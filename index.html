@@ -1,92 +1,679 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hack Glasgow 2025 Schedule</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<img class="hg-logo" src="logo.png">
-	<h2>Hack Glasgow Schedule</h2>
-	<h4>Saturday 26th April 2025</h4>
-	<h4>Tickets <a href="https://hackglasgow.live">available here</a></h4>
-	<table>
-		<body>
-			<tr>
-				<th>09:00</th>
-				<td colspan="4" rowspan="1" class="platform-general">Doors Open &amp; Registration</td>
-			</tr>
-			<tr>
-				<th>09:45</th>
-				<td colspan="4" class="platform-central">Opening Remarks<span class="stage">Platform Central</span></td>
-			<tr>
-				<th>10:00</th>
-				<td colspan="2" rowspan="1" class="platform-one">Hacking things with AI stuff<span class="speaker">Cary Hendricks</span><span class="stage">Platform 1</span></td>
-				<td colspan="2" rowspan="1" class="platform-two">Why Did the Company Get Defrauded? BECause...<span class="speaker">Mark Saunders</span><span class="stage">Platform 2</span></td>
-			</tr>
-			<tr>
-				<th>11:00</th>
-				<td colspan="2" class="platform-closed">Talk cancelled</td>
-				<td colspan="2" class="platform-two">A Dual Perspective on Cybercrime<span class="speaker">Calum Baird &amp; James McGoldrick</span><span class="stage">Platform 2</span></td>
-			</tr>
-			<tr>
-				<th>11:30</th>
-				<td colspan="2" class="platform-one">Securing Values: The Ethics of Cyber Security<span class="speaker">Michael Whitehead</span><span class="stage">Platform 1</span></td>
-				<td colspan="2" class="platform-two">Enshittification of the Industry<span class="speaker">Rosie Anderson</span><span class="stage">Platform 2</span></td>
-			</tr>
-			<tr>
-				<th>12:00</th>
-				<td colspan="4" rowspan="1" class="platform-general">Lunch</td>
-			</tr>
-			<tr>
-				<th>13:00</th>
-				<td colspan="2" rowspan="1" class="platform-one">How to get away with hacking<span class="speaker">Liam Follin</span><span class="stage">Platform 1</span></td>
-				<td colspan="2" rowspan="1" class="platform-two">Attacking AWS - From initial access to hardcore persistence<span class="speaker">Santi Abastante</span><span class="stage">Platform 2</span></td>
-			</tr>
-			<tr>
-				<th>14:00</th>
-				<td colspan="2" class="platform-one">Getting started in bug bounty, from picking a program to getting your first report triaged<span class="speaker">Lennaert Oudshoorn</span><span class="stage">Platform 1</span></td>
-				<td colspan="2" class="platform-two">Forensic Acquisition of Soldered Storage Laptops (and others) Using Kali Linux<span class="speaker">Calum Baird</span><span class="stage">Platform 2</span></td>
-			</tr>
-			<tr>
-				<th>14:30</th>
-				<td colspan="2" class="platform-one">Yelling at the people and/or the thinking sand isn't helping<span class="speaker">maya boeckh</span><span class="stage">Platform 1</span></td>
-				<td colspan="2" class="platform-two">Terminal velocity: Common command-line controls and bypasses<span class="speaker">Andrew Finlayson</span><span class="stage">Platform 2</span></td>
-			</tr>
-			<tr>
-				<th>15:00</th>
-				<td colspan="4" rowspan="1" class="platform-general">Break</td>
-			</tr>
-			<tr>
-				<th>15:30</th>
-				<td colspan="2" rowspan="1" class="platform-one">Blame the Parents<span class="speaker">James Bore</span><span class="stage">Platform 1</span></td>
-				<td colspan="2" rowspan="4" class="platform-closed">Track closed for afterparty setup</td>
-			</tr>
-			<tr>
-				<th>16:00</th>
-				<td colspan="2" class="platform-one">Phishing Kits vs Financial Institutions - History, OSINT and Automation<span class="speaker">Tom Blue & Alana Witten</span><span class="stage">Platform 1</span></td>
-			</tr>
-			<tr>
-				<th>16:30</th>
-				<td colspan="2" class="platform-one">Femtech and Data Privacy: What’s at Stake?<span class="speaker">Arohi Naik</span><span class="stage">Platform 1</span></td>
-			</tr>
-			<tr>
-				<th>17:00</th>
-				<td colspan="2" rowspan="1" class="platform-one">Geopolitics, Climate Change & Cyber: Why Nation States Will Super Charge Espionage and Cyber Attacks<span class="speaker">Ian Thornton-Trump</span><span class="stage">Platform 1</span></td>
-			</tr>
-			<tr>
-				<th>18:00</th>
-				<td colspan="4" class="platform-central">Closing Remarks<span class="stage">Platform 1</span></td>
-			</tr>
-			<tr>
-				<th>18:15</th>
-				<td colspan="4" rowspan="2" class="platform-general">Afterparty</td>
-			</tr>
-			<tr>
-				<th>00:00</th>
-			</tr>
-		</body>
-	</table>
-</body>
+<html lang="en">
+   <head>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <title>Hack Glasgow</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/flexslider.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/venobox.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Preloader -->
+      <div class="loader">
+         <!-- Preloader inner -->
+         <div class="loader-inner">
+            <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <circle class="spinner" cx="50" cy="50" r="21" fill="#111111" stroke-width="1.5"/>
+            </svg>
+         </div>
+         <!-- End preloader inner -->
+      </div>
+      <!-- End preloader-->
+      <!--Wrapper-->
+      <div class="wrapper">
+         <!--Hero section-->
+         <section class="hero overlay">
+            <!--Main slider-->
+            <div class="main-slider slider">
+               <ul class="slides">
+                  <li>
+                     <div class="background-img">
+                        <img src="img/hg2025-hero.png" alt="">
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <!--End main slider-->
+            <!--Header-->
+            <header class="header">
+               <!--Container-->
+               <div class="container ">
+                  <!--Row-->
+                  <div class="row">
+                     <div class="col-md-2">
+                        <a class="scroll logo" href="#wrapper">
+                           <img src="img/hg-logotxt.png">
+                        </a>
+                     </div>
+                     <div class="col-md-10 text-right">
+                        <nav class="main-nav">
+                           <div class="toggle-mobile-but">
+                              <a href="#" class="mobile-but" >
+                                 <div class="lines"></div>
+                              </a>
+                           </div>
+                           <ul>
+                              <li><a class="scroll" href="#wrapper">Home</a></li>
+                              <li><a class="scroll" href="#about">About</a></li>
+                              <li><a class="scroll" href="#tickets">Tickets</a></li>
+                              <li><a class="scroll" href="#sponsors">Sponsors</a></li>
+                              <li><a class="scroll" href="#faq">FAQ</a></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+                  <!--End row-->
+               </div>
+               <!--End container-->
+            </header>
+            <!--End header-->
+            <!--Inner hero-->
+            <div class="inner-hero fade-out">
+            <!--Container-->
+               <div class="container hero-content">
+               <div class="row vertical-align tickets">
+                  <img src="img/welcome.png" alt="">
+               </div>
+
+
+
+
+               </div>
+               <!--End container-->
+            </div>
+            <!--End inner hero-->
+         </section>
+         <!--End hero section-->
+         <!--About section-->
+         <section id="moreinfo" class="about pt-20 pb-60">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2 mb-50 text-center">
+                     <h1 class="title">For the community, by the community</h1>
+                     <p class="title-lead mt-20">From the people that bring you <a href="" class="gradient-text">Hack Thursday</a>, Hack Glasgow is an annual community led hacker conference based in Glasgow, Scotland. Often referred to as Europe's friendliest city, Glasgow is Scotland's home of innovation, culture, science, and technology. Well renowned for their grit and determination, the perceived mindset of Glaswegians is not too dissimilar to that of the hacker community, making it the perfect home for a hacker conference. People Make Glasgow but together, we Hack Glasgow.</p>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-offset-3 col-md-3 col-sm-3">
+                     <div class="block-info-1">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           width="35px" height="25px" viewBox="0 0 42 32" enable-background="new 0 0 42 32" xml:space="preserve">
+                           <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5.1983" y1="28.1187" x2="43.4067" y2="11.702">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_1_)" d="M38,30.5v-19c0-0.276-0.224-0.5-0.5-0.5S37,11.224,37,11.5v19c0,0.276-0.224,0.5-0.5,0.5h-31
+                              C5.224,31,5,30.776,5,30.5v-19C5,11.224,4.776,11,4.5,11S4,11.224,4,11.5v19C4,31.327,4.673,32,5.5,32h31
+                              C37.327,32,38,31.327,38,30.5z"/>
+                           <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="4.7162" y1="26.9965" x2="42.9245" y2="10.5799">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_2_)" d="M8.5,23C8.224,23,8,23.224,8,23.5S8.224,24,8.5,24H10v3.5c0,0.276,0.224,0.5,0.5,0.5
+                              s0.5-0.224,0.5-0.5V24h6v3.5c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V24h6v3.5c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V24
+                              h6v3.5c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V24h1.5c0.276,0,0.5-0.224,0.5-0.5S33.776,23,33.5,23H32v-5h1.5
+                              c0.276,0,0.5-0.224,0.5-0.5S33.776,17,33.5,17H32v-4.5c0-0.276-0.224-0.5-0.5-0.5S31,12.224,31,12.5V17h-6v-4.5
+                              c0-0.276-0.224-0.5-0.5-0.5S24,12.224,24,12.5V17h-6v-4.5c0-0.276-0.224-0.5-0.5-0.5S17,12.224,17,12.5V17h-6v-4.5
+                              c0-0.276-0.224-0.5-0.5-0.5S10,12.224,10,12.5V17H8.5C8.224,17,8,17.224,8,17.5S8.224,18,8.5,18H10v5H8.5z M31,18v5h-6v-5H31z
+                              M24,18v5h-6v-5H24z M11,18h6v5h-6V18z"/>
+                           <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-0.4811" y1="14.9003" x2="37.7272" y2="-1.5164">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_3_)" d="M32.5,3h4.25C36.837,3,37,3,37,3.5V8H5V3.5C5,3.224,5.224,3,5.5,3h4C9.776,3,10,2.776,10,2.5
+                              S9.776,2,9.5,2h-4C4.673,2,4,2.673,4,3.5v5C4,8.776,4.224,9,4.5,9h33C37.776,9,38,8.776,38,8.5v-5C38,2.394,37.354,2,36.75,2H32.5
+                              C32.224,2,32,2.224,32,2.5S32.224,3,32.5,3z"/>
+                           <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-1.6311" y1="12.2237" x2="36.5772" y2="-4.1929">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_4_)" d="M26.5,3C26.776,3,27,2.776,27,2.5S26.776,2,26.5,2h-11C15.224,2,15,2.224,15,2.5S15.224,3,15.5,3
+                              H26.5z"/>
+                           <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-2.9557" y1="9.1407" x2="35.2526" y2="-7.2759">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_5_)" d="M13,4.5v-4C13,0.224,12.776,0,12.5,0S12,0.224,12,0.5v4C12,4.776,12.224,5,12.5,5S13,4.776,13,4.5z"
+                              />
+                           <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-0.3065" y1="15.3067" x2="37.9019" y2="-1.11">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_6_)" d="M29.5,5C29.776,5,30,4.776,30,4.5v-4C30,0.224,29.776,0,29.5,0S29,0.224,29,0.5v4
+                              C29,4.776,29.224,5,29.5,5z"/>
+                        </svg>
+                        <p>
+                           <strong>DATE</strong>
+                           <span>Saturday 25th April 2026</span>
+                        </p>
+                     </div>
+                  </div>
+                  <div class=" col-md-3 col-sm-3">
+                     <div class="block-info-1">
+                        <svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           width="35px" height="25px" viewBox="0 0 42 32" enable-background="new 0 0 42 32" xml:space="preserve">
+                           <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="4.511" y1="11.8158" x2="41.3229" y2="27.6695">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_7_)" d="M10.239,31.926c0.009,0.006,0.021,0.003,0.03,0.009C10.341,31.973,10.418,32,10.499,32
+                              c0.044,0,0.088-0.006,0.132-0.018l10.868-2.966l10.868,2.966C32.411,31.994,32.455,32,32.499,32c0.082,0,0.158-0.027,0.23-0.065
+                              c0.01-0.005,0.021-0.003,0.03-0.009l9-5.5c0.191-0.117,0.281-0.348,0.22-0.563l-4.984-17.5c-0.041-0.147-0.148-0.267-0.29-0.326
+                              c-0.142-0.057-0.301-0.048-0.436,0.026l-4.962,2.784c-0.24,0.135-0.326,0.44-0.191,0.681c0.135,0.242,0.439,0.327,0.682,0.191
+                              l4.409-2.475l4.707,16.526l-8.015,4.898l-1.904-15.231c-0.034-0.275-0.293-0.466-0.559-0.434c-0.273,0.034-0.468,0.284-0.434,0.558
+                              l1.907,15.259L22,28.115v-2.73c0-0.276-0.224-0.5-0.5-0.5s-0.5,0.224-0.5,0.5v2.73l-9.911,2.705l1.907-15.259
+                              c0.034-0.274-0.16-0.524-0.434-0.558c-0.272-0.032-0.524,0.159-0.559,0.434l-1.904,15.231L2.084,25.77L6.791,9.244l4.409,2.475
+                              c0.242,0.134,0.546,0.049,0.682-0.191c0.135-0.241,0.049-0.545-0.191-0.681L6.729,8.063C6.595,7.988,6.436,7.979,6.293,8.037
+                              c-0.142,0.059-0.249,0.178-0.29,0.326l-4.984,17.5c-0.062,0.216,0.028,0.446,0.22,0.563L10.239,31.926z"/>
+                           <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="12.6241" y1="7.5582" x2="28.5468" y2="14.4156">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_8_)" d="M21.161,23.367c0.096,0.088,0.217,0.132,0.339,0.132c0.12,0,0.24-0.043,0.336-0.129
+                              C22.169,23.067,30,15.882,30,8.499c0-4.767-3.733-8.5-8.5-8.5S13,3.732,13,8.499C13,15.753,20.828,23.059,21.161,23.367z
+                              M21.5,0.999c4.275,0,7.5,3.224,7.5,7.5c0,6.097-5.993,12.337-7.497,13.807C20.002,20.819,14,14.497,14,8.499
+                              C14,4.223,17.225,0.999,21.5,0.999z"/>
+                           <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="17.3671" y1="6.7191" x2="25.6329" y2="10.2789">
+                              <stop  offset="0" style="stop-color:#399BFF"/>
+                              <stop  offset="1" style="stop-color:#EE71F9"/>
+                           </linearGradient>
+                           <path fill="url(#SVGID_9_)" d="M26,8.499c0-2.481-2.019-4.5-4.5-4.5S17,6.018,17,8.499s2.019,4.5,4.5,4.5S26,10.98,26,8.499z
+                              M21.5,11.999c-1.93,0-3.5-1.57-3.5-3.5s1.57-3.5,3.5-3.5s3.5,1.57,3.5,3.5S23.43,11.999,21.5,11.999z"/>
+                        </svg>
+                        <p>
+                           <strong>LOCATION</strong>
+                           <span>Platform Glasgow, G2 8DL</span>
+                        </p>
+                     </div>
+                  </div>
+<!--                   <div class="col-md-3 col-sm-3 text-center">
+                     <div class="block-info-1">
+                        <a href="#tickets" class="but"> Get Tickets</a>
+                     </div>
+                  </div> -->
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End about section-->
+
+         <section id="gallery" class="gallery pt-100 pb-100">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-12 ">
+                     <ul class="block-gallery">
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-1.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-1.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-2.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-2.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-11.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-11.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-4.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-4.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-5.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-5.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-6.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-6.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-7.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-7.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-8.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-8.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-9.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-9.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-10.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-10.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-3.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-3.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-13.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-13.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-14.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-14.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-12.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-12.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 active">
+                           <a href="img/hack-glasgow-2025-15.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-15.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-16.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-16.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-17.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-17.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="col-sm-2 ">
+                           <a href="img/hack-glasgow-2025-18.png" class="venobox">
+                              <div class="block-img">
+                                 <div class="background-img">
+                                    <img alt="" src="img/hack-glasgow-2025-18.png" style="display: none;">
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End gallery section-->
+
+         <!--Topics section-->
+         <section id="about" class="topics pt-100 pb-100">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2 mb-100 text-center">
+                     <h1 class="title">About the event</h1>
+                     <p class="title-lead mt-10">Hack Glasgow is a single day event with two parallel speaking tracks, villages, a central and generously-sized sponsor area, and exclusive afterparty for attendees, speakers, crew, and sponsors. In 2025 we welcomed over 280 attendees, watched 16 incredible speakers delivering (or co-delivering) 15 talks, lock picking, a book stall, several sponsors, a charity sticker stall, an exclusive "portalcam" live link to BSides Exeter, and much more.</p>
+                     <p class="title-lead mt-10">After running the much loved Hack Thursday, the organisation team realised there was appetite in Scotland for a community led infosec conference at home. Welcoming hackers of all walks, and those just simply curious, Hack Glasgow is a space for all who are interested in information security, privacy, and hacking. With talks ranging in both subject and complexity, villages showcasing fun and interesting activities, sponsors excited to show attendees their products and get feedback - there truly is something for everyone at Hack Glasgow.</p>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-sm-6 ">
+                     <h3 class="sub-title-0  mb-20"><span class="gradient-text">Feedback</span><br> 
+                     </h3>
+                     <div class="review-slider flexslider">
+                        <ul class="slides">
+                           <li>
+                              <blockquote>“From the little touches (thank you notes from the organisers to speakers is something I've still got warm fuzzies about - a little appreciation goes a long way), to the design aspects and working with the theme of the venue for schedules. The selection of talks was brilliant, the main area was lively but not cramped, catering was just right, and the choice to keep the focus on the talks rather than cramming in other activities and workshops was something I'd never realise could make such a positive difference.<br/> Absolutely brilliant event, cannot congratulate and thank the team enough, and keeping my fingers crossed that they'll be doing it again!“ </blockquote>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                     <h3 class="sub-title-0  mb-20"><span class="gradient-text">Hack Glasgow 2025 playlist</span><br> 
+                     </h3>
+                     <div class="block-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dJhmtF_ZX6U?si=P79_kw-ryT17O8E-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+               <!--end of row-->
+            </div>
+         </section>
+         <!--End topics section-->
+         <!--Tickest section-->
+         <section id="tickets" class="tickets pt-100 pb-100">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2 mb-20 text-center">
+                     <h1 class="title">Tickets & pay it forward</h1>
+                     <p class="title-lead mt-10">Many of us are lucky to be in a position to afford a ticket to an infosec conference. We want to do everything we can to give opportunities to those who might not otherwise be able to attend - that's why we implemented our Pay it Forward scheme allowing people to purchase a ticket that can be given to an applicant from our Pay it Forward scheme.</p>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row vertical-align tickets">
+                  <div class="col-sm-6 col-md-6">
+                     <h3 class="sub-title-0  mb-20"><span class="gradient-text">No hidden drops, no mates rates,</span><br> 
+                        <span class="gradient-text">no "don't you know who I am"</span>
+                     </h3>
+                     <div class="review-slider flexslider">
+                        <ul class="slides">
+                           <li>
+                              <p class="title-lead">Equality, transparency, and fairness is at the core of who we are both as a community, and who we are as Hack Glasgow. We want everyone to be treated fairly, and have an equal opportunity at attending conferences. That's why we don't do multiple ticket drops, discounts, or free tickets.</p>
+                              <p class="title-lead">As part of our commitment to encourage more individuals to attend conferences like ours who otherwise wouldn't be able to due to financial reasons, we operate a Pay it Forward scheme - allowing generous individuals the ability to purchase ticket to be donated to a Pay it Forward applicant.</p>
+                              <p class="title-lead">If you or someone you know could benefit from a Pay it Forward ticket, these can be applied for <a href="#" class="gradient-text">here</a>.</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-sm-8 col-md-8">
+                     <div class="col-sm-6">
+                        <ul class="block-tickets overlap">
+                           <li>
+                              <ul class="block-ticket">
+                                 <li class="block-price"><span class="price"><span class="cur">£</span>20</span><span class="block-type">Donate a ticket</span></li>
+                                 <li>Donate a General Admission ticket</li>
+                                 <li><a href="#" class="but mt-30"> Donate</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-6">
+                        <ul class="block-tickets">
+                           <li>
+                              <ul class="block-ticket active">
+                                 <li class="block-price"><span class="price"><span class="cur">£</span>20</span><span class="block-type">General admission</span></li>
+                                 <li>Access to all talks</li>
+                                 <li>Unlimited tea & coffee</li>
+                                 <li>Lunch and dinner</li>
+                                 <li><a href="#" class="but mt-30"> Buy Ticket Now</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End tickets section-->
+         <!--Sponsor section-->
+         <section id="sponsors" class="sponsor pt-100 pb-20">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2 mb-50 text-center ">
+                     <h1 class="title">Our previous sponsors</h1>
+                     <p class="title-lead mt-10 mb-20">Without sponsors, Hack Glasgow simply could not run. We're incredibly thankful to all sponsors from previous years and hope to see them return in successive years. Want to see your company here? Download our most up to date <a href="#" class="gradient-text" target="_blank">sponsorship pack</a> or send us an email at <a href="mailto:org@hackglasgow.live" class="gradient-text">org@hackglasgow.live</a>! We'd love to hear how we can help you.</p>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-12  col-sm-push-1 text-center">
+                     <div class="col-md-2 col-sm-2 ">
+                        <div class="block-sponsor">
+                           <img src="img/2025-sponsor-idcyber.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-md-2 col-sm-2">
+                        <div class="block-sponsor">
+                           <img src="img/2025-sponsor-admiral.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-md-2 col-sm-2">
+                        <div class="block-sponsor">
+                           <img src="img/2025-sponsor-dgs.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-md-2 col-sm-2">
+                        <div class="block-sponsor">
+                           <img src="img/2025-sponsor-ps.png" alt="">
+                        </div>
+                     </div>
+                     <div class="col-md-2 col-sm-2">
+                        <div class="block-sponsor">
+                           <img src="img/2025-sponsor-cytix.png" alt="">
+                        </div>
+                     </div>
+                  </div>
+                     
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End sponsor section-->
+         <!--Faq section-->
+         <section id="faq" class="faq pt-100 pb-50">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2 mb-50 text-center ">
+                     <h1 class="title">Frequently asked questions </h1>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2  ">
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">Do you have a Code of Conduct</h4>
+                        <p>We follow the Berlin Code of Conduct.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">How can I sponsor the event?</h4>
+                        <p>If you, or your company are interested in exploring sponsoring opportunities, we'd love to hear from you. Our sponsorship pack contains all relevant information but please don't be afraid to reach out and grab some time with us for a chat - we're always incredibly keen to see how we can make your sponsorship contribution the best it possibly can be. We also accept donations from members of the community via our PayPal.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">Is the venue accessible?</h4>
+                        <p>Yes! The venue (<a href="https://platformgla.co.uk/" class="gradient-text" target="_blank">Platform Glasgow</a>) is fully accessible with different entrances (double doors and ramps) and the entire event will be on one single level. If you have accessibility concerns or questions, feel free to reach out to us, or the venue, directly.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">When will tickets be available?</h4>
+                        <p>Tickets will be on sale <a href="" target="_blank" class="gradient-text">on Eventbrite</a> from October until one day before the event. If tickets sell out, the waitlist feature is available to get notified when tickets are released from refunds and cancellations. Please check our Eventbrite page for all ticketing terms, including refunds.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">Do I need a ticket? Don't you know who I am?</h4>
+                        <p>Once the General Admission tickets are gone - they're really gone. We don't do multiple drops, hidden discount codes, mates rates, or let folks in because we want to massage their ego. We want everyone who attends the conference to be on a level playing field and we'd hate to see a student scraping their last pennies together to attend the event, only to find out a CISO was let in for free because they knew us. So, to make things fair for all, and make our budgeting easier - no ticket, no entry.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">I'm a speaker/volunteer, do I need a ticket?</h4>
+                        <p>Speakers, and volunteers, who have been successful will be given a full ticket to the day. If you've already purchased a ticket, you can either request a refund, resell it, or give it away.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">When will call for speakers open/close?</h4>
+                        <p>Call for Papers (CfP) will open around 6 months prior to the event and closed around 3 months prior to the event to give speakers enough time to confirm their acceptance, write a talk, and finesse it.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">Will talks be recorded?</h4>
+                        <p>Unless the speaker themselves have specifically asked for no recordings, all talks will be recorded and we aim to upload them to our <a href="https://www.youtube.com/@hackglasgow" target="_blank" class="gradient-text">YouTube channel</a> within 1 week of the conference date.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">What's the "Pay it forward" scheme?</h4>
+                        <p>Tickets are bought and donated to the "Pay it forward" scheme by members of the community to allow those who wouldn't otherwise be able to attend a chance to come along and experience an infosec conference. Applications for the Pay it forward scheme are assessed by the Hack Glasgow team and close 2 months prior to the event.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">What food and drinks will be provided?</h4>
+                        <p>A ticket to the event includes refreshments (such as tea, coffee, water, etc), lunch, dinner, and one alcoholic/non-alcoholic drink for the after party. Check our social accounts for up to date information on food for the event.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">I have allergies/dietary requirements - can you accommodate this?</h4>
+                        <p>All dietary requirements must be sent to us no later than two weeks prior to the event. If you've transferred your ticket to another person, you'll need to get them to fill in the dietary requirements of the ticket on Eventbrite. We're able to cater for most, if not all, dietary requirements, so don't be afraid to reach out.</p>
+                     </div>
+                     <div class="block-faq mb-50">
+                        <h4 class="mb-10">Can I bring my child (under 18), and do they need a ticket?</h4>
+                        <p>Children are welcome at the event and while we want to encourage the next generation in every possible way please bear in mind some topics may be of an adult nature. Children over 2 years old require their own ticket to be purchased. Children under the age of 16 must be accompanied at all times by an adult. The venue has asked for all persons under 18 to have vacated the premises by 9pm to comply with licensing laws.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2  text-center mt-50">
+                     <h2 class="sub-title-1">Still have questions?</h2>
+                     <p><a class="gradient-text" href="mailto:contact@events.com ">org@hackglasgow.live</a></p>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->		
+         </section>
+         <!--End faq section-->
+         <footer class="pt-30">
+            <div class="bottom-footer bg-black pb-50">
+               <!--Container-->
+               <div class="container ">
+                  <div class="col-md-12 text-center">
+                     <p>&copy; Hack Glasgow Limited (SC848077). All rights reserved.</p>
+                        <ul class="block-social mt-20">
+                           <li><a href="#"><i class="icon-twitter"></i></a></li>
+                           <li><a href="#"><i class="icon-youtube"></i></a></li>
+                           <li><a href="#"><i class="icon-instagram-1"></i></a></li>
+                           <li><a href="#"><i class="icon-linkedin-1"></i></a></li>
+                           <li><a href="#"><i class="icon-tree"></i></a></li>
+                        </ul>
+                  </div>
+               </div>
+               <!--End container-->		
+            </div>
+         </footer>
+      </div>
+      <!-- End wrapper-->
+      <!--Javascript-->	
+      <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+      <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+      <script src="js/jquery.countdown.min.js" type="text/javascript"></script>
+      <script src="js/smooth-scroll.js" type="text/javascript"></script>
+      <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+      <script src="js/placeholders.min.js" type="text/javascript"></script>
+      <script src="js/venobox.min.js" type="text/javascript"></script>
+      <script src="js/instafeed.min.js" type="text/javascript"></script>
+      <script src="js/script.js" type="text/javascript"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbGQXiGt-6UAmOFFdSzYI-byeE7ewBuVM&callback=initializeMap"></script>
+      <!-- Google analytics -->
+      <!-- End google analytics -->
+   </body>
 </html>
