@@ -238,6 +238,9 @@ section.hero .inner-hero {
     padding: 5px 0;
     text-transform: none;
 }
+.logo img{
+    max-width: 200px;
+}
 .mobile-but {
     display: inline-block;
     height: 24px;
