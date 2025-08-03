@@ -137,47 +137,10 @@
 
 
 
-    // Instagram feed setup
-
-    var instaFeed = new Instafeed({
-        get: 'user',
-        userId: '305801553',
-        accessToken: '305801553.1677ed0.3d872300c10c4ff687868875ee8abc5d',
-        limit: 6,
-        template: '<li class="col-sm-4"><a href="{{link}}"><img src="{{image}}"/></a></li>'
-    });
-    instaFeed.run();
 
 
-    // Form validation 
 
-    var resgistryForm = $('.registry-form');
-    resgistryForm.validate({
-        validClass: 'valid',
-        errorClass: 'error',
-        errorPlacement: function(error, element) {
-            return true;
-        },
-        onfocusout: function(element, event) {
-            $(element).valid();
-        },
-        rules: {
-            email: {
-                required: true,
-                email: true
-            }
-        },
-
-        rules: {
-            name: {
-                required: true,
-                minlength: 3
-            }
-        }
-
-
-    });
-
+  
 
 
 })(jQuery);
