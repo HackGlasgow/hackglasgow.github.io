@@ -1,14 +1,3 @@
-/* Table of Content
-==================================================
-	1.Reset & Basics
-	2.Basic Styles
-	3.Typography and Common style
-	4.Links
-	5.Misc
-
-
-/* Reset & Basics (Inspired by E. Meyers) */
-
 *,
 *:before,
 *:after {
@@ -695,23 +684,4 @@ p a:after {
 }
 .pd-0 {
     padding: 0 !important;
-}
-a[href^="http://maps.google.com/maps"] {
-    display: none !important
-}
-a[href^="https://maps.google.com/maps"] {
-    display: none !important
-}
-.gmnoprint a,
-.gmnoprint span,
-.gm-style-cc {
-    display: none;
-}
-.gmnoprint div {
-    background: none !important;
-}
-/*End misc */
-sup {
-    font-size: 0.8em;
-    vertical-align: super;
 }
