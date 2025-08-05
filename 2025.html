@@ -7,7 +7,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
       <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
       <link rel="preload" href="css/flexslider.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <noscript><link rel="stylesheet" href="css/flexslider.css"></noscript>
       <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -15,8 +14,9 @@
       <link rel="preload" href="css/venobox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <noscript><link rel="stylesheet" href="css/venobox.css"></noscript>
       <link href="css/venobox.css" rel="stylesheet" type="text/css"  media="all" />
-      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
-      <link rel="preload" as="image" href="img/hg2025-hero.webp">
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,700" rel="stylesheet">
+      <link rel="preload" as="image" href="img/hg2025-hero.webp" fetchpriority="high" type="image/webp">
+      <link rel="preload" as="image" href="img/welcome.webp" fetchpriority="high" type="image/webp">
    </head>
    <body>
       <div class="loader">
@@ -1376,13 +1376,13 @@
             </div>
          </footer>
       </div>
-      <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
-      <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-      <script src="js/jquery.countdown.min.js" type="text/javascript"></script>
-      <script src="js/smooth-scroll.js" type="text/javascript"></script>
-      <script src="js/jquery.validate.min.js" type="text/javascript"></script>
-      <script src="js/placeholders.min.js" type="text/javascript"></script>
-      <script src="js/venobox.min.js" type="text/javascript"></script>
-      <script src="js/script.js" type="text/javascript"></script>
+      <script src="js/jquery-1.12.4.min.js" type="text/javascript" defer></script>
+      <script src="js/jquery.flexslider-min.js" type="text/javascript" defer></script>
+      <script src="js/jquery.countdown.min.js" type="text/javascript" defer></script>
+      <script src="js/smooth-scroll.js" type="text/javascript" defer></script>
+      <script src="js/jquery.validate.min.js" type="text/javascript" defer></script>
+      <script src="js/placeholders.min.js" type="text/javascript" defer></script>
+      <script src="js/venobox.min.js" type="text/javascript" defer></script>
+      <script src="js/script.js" type="text/javascript" defer></script>
    </body>
 </html>
