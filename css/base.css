@@ -143,9 +143,6 @@ img {
     height: auto;
     max-width: 100%;
 }
-.map img {
-    max-width: none;
-}
 a:focus {
     outline: 0;
 }
@@ -254,17 +251,6 @@ blockquote {
     font-weight: 300;
     text-transform: none;
 }
-.sub-title-2 {
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: none;
-}
-.sub-title-3 {
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: none;
-    color: #cccccc;
-}
 .gradient-text {
     background: -webkit-linear-gradient(left, #399bff 30%, rgba(238, 113, 249, .9) 65%);
     background: -moz-linear-gradient(left, #399bff 30%, rgba(238, 113, 249, .9) 65%);
@@ -283,20 +269,6 @@ section,
     position: relative;
     overflow: hidden;
 }
-.front-p {
-    position: relative;
-    z-index: 100;
-}
-.uppercase {
-    text-transform: uppercase;
-}
-.white {
-    color: #ffffff;
-}
-.top {
-    position: relative;
-    top: -10px;
-}
 .block-form,
 .block-tabs,
 .block-tab,
@@ -308,38 +280,6 @@ section,
     -ms-border-radius: 6px;
     -o-border-radius: : 6px;
 }
-.indent {
-    text-indent: -999px;
-    display: none;
-}
-input[type]:-moz-placeholder {
-    color: #ffffff;
-    opacity: .4;
-    font-size: 14px;
-}
-:-moz-placeholder {
-    color: #ffffff;
-    opacity: .4;
-    font-size: 14px;
-}
-::-moz-placeholder {
-    color: #ffffff;
-    opacity: .4;
-    font-size: 14px;
-}
-:-ms-input-placeholder {
-    color: #ffffff;
-    opacity: .4;
-    font-size: 14px;
-}
-::-webkit-input-placeholder {
-    color: #ffffff;
-    opacity: .4;
-    font-size: 14px;
-}
-/* End typography and common style*/
-/*Links*/
-
 span a,
 p a {
     position: relative;
@@ -454,9 +394,6 @@ p a:after {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#399bff', endColorstr='#ee71f9', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
-/*End links*/
-/*Misc */
-
 .pt-10 {
     padding-top: 10px !important;
 }
