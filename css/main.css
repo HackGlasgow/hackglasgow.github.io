@@ -96,9 +96,6 @@ section.hero {
     position: relative;
     overflow: hidden;
 }
-section.single-hero {
-    min-height: 400px;
-}
 .background-img img {
     display: none;
 }
@@ -146,23 +143,6 @@ section.single-hero {
     z-index: 3;
     content: "";
 }
-.overlay.soft:before {
-    position: absolute;
-    background: rgba(0, 0, 0, .5);
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+32,000000+100&1+0,0.5+32,1+100 */
-    
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
-    /* FF3.6-15 */
-    
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
-    /* IE6-9 */
-}
 section.hero .inner-hero {
     bottom: 0;
     left: 0;
@@ -190,10 +170,6 @@ section.hero .inner-hero {
     font-weight: 700;
     letter-spacing: -2px;
     position: relative;
-}
-.header .logo h2 {
-    padding: 5px 0;
-    text-transform: none;
 }
 .logo img{
     max-width: 200px;
@@ -274,30 +250,6 @@ section.hero .inner-hero {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
-h1.large {
-    color: #ffffff;
-    font-size: 68px;
-    font-weight: 500;
-    text-transform: none;
-}
-.hero-content h3 {
-    font-style: italic;
-    font-size: 44px;
-    color: #ffffff;
-    text-transform: none;
-    font-weight: 300;
-}
-.hero-content p {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 40px;
-    color: #ffffff;
-}
-/* End hero section*/
-
-
-/* About section*/
-
 .block-info-1 {
     position: relative;
 }
@@ -316,60 +268,9 @@ h1.large {
 .block-info-1 p {
     margin-left: 60px;
 }
-/* End about section*/
-
-
-/* Speakers section*/
-
 .block-img {
     height: 350px;
     position: relative;
-}
-.block-speaker .block-img:after {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,444444+70,444444+100&0+3,0.4+70,1+100 */
-    
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(3, 3, 3, 0) 3%, rgba(68, 68, 68, 0.4) 70%, rgba(68, 68, 68, 1) 100%);
-    /* FF3.6-15 */
-    
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(3, 3, 3, 0) 3%, rgba(68, 68, 68, 0.4) 70%, rgba(68, 68, 68, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(3, 3, 3, 0) 3%, rgba(68, 68, 68, 0.4) 70%, rgba(68, 68, 68, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#444444', GradientType=0);
-    /* IE6-9 */
-    
-    bottom: 0;
-    content: "";
-    right: 0;
-    position: absolute;
-    top: 0;
-    width: 1px;
-    z-index: 4;
-}
-.block-content .col-sm-3:last-child .block-img:after {
-    content: none;
-}
-.block-speaker .block-img .background-img {
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-    -ms-filter: grayscale(1);
-    -o-filter: grayscale(1);
-}
-.block-speaker .block-img:hover .background-img {
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-}
-.block-info-2 {
-    bottom: 30px;
-    left: 30px;
-    position: absolute;
-    z-index: 3;
 }
 .block-social li {
     display: inline-block;
@@ -385,19 +286,8 @@ h1.large {
 .block-social a:hover {
     opacity: 1;
 }
-/* End speakers section*/
-
-
-/* Topics section*/
-
 .block-video iframe {
     height: 300px;
-}
-ul.block-topic li {
-    line-height: 30px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #ffffff;
 }
 .vertical-align {
     align-items: center;
@@ -409,11 +299,6 @@ ul.block-topic li {
     flex-direction: row;
     -webkit-flex-direction: row;
 }
-/* End topics section*/
-
-
-/* Schedule section*/
-
 .block-tabs,
 .block-tab {
     border: 1px solid #444444;
@@ -531,20 +416,6 @@ ul.block-topic li {
     -ms-border-radius: 0 0 5px 5px;
     -o-border-radius: : 0 0 5px 5px;
 }
-/* End Schedule section*/
-
-
-/* Countdown section*/
-
-.countdown {
-    font-size: 45px;
-    font-weight: 300;
-}
-/* End Countdown section*/
-
-
-/* Tickets section*/
-
 .review-slider li blockquote {
     color: #ffffff;
     font-size: 20px;
@@ -616,10 +487,6 @@ ul.block-topic li {
     top: -12px;
     color: #999999;
 }
-/* End tickets section*/
-
-/* Sponsors section*/
-
 .block-sponsor img {
     opacity: .2;
     width: 85%;
@@ -631,52 +498,14 @@ ul.block-topic li {
     -ms-transform: scale(1.05);
     -moz-transform: scale(1.05);
 }
-
-/* End sponsors section*/
-
-/* Contact section*/
-
-.block-map {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.map {
-    width: 100%;
-    height: 100%;
-}
-.location h1.title {
-    color: #cccccc;
-}
-.block-info-3 p,
-.location p.title-lead {
-    color: #999999;
-}
-/* End contact section*/
-
-
-/* Accommodation section*/
-
 .accom .block-img {
     height: 250px;
 }
-/* End accommodation section*/
-
-
-/* FAQ section*/
-
 .block-faq h4 {
     font-size: 16px;
     font-weight: 700;
     text-transform: none;
 }
-/* End faq section*/
-
-
-/* Gallery section*/
-
 .block-gallery li {
     opacity: .45;
     position: relative;
@@ -702,96 +531,9 @@ ul.block-topic li {
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
 }
-/* End gallery section*/
-
-
-/* Fat footer section */
-
-.top-footer {
-    color: #999999;
-}
-.top-footer .block-social li {
-    margin-right: 10px;
-}
-.top-footer .block-social li a {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: : 50%;
-    color: #ffffff;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    width: 40px;
-    opacity: 1;
-    text-align: center;
-    font-size: 16px;
-}
-.top-footer .block-social li:first-child a {
-    background: #175f9f;
-}
-.top-footer .block-social li:nth-child(2) a {
-    background: #00c6f8;
-}
-.top-footer .block-social li:nth-child(3) a {
-    background: #df0006;
-}
-.top-footer .block-social li:nth-child(4) a {
-    background: #ee322a;
-}
-.top-footer .block-social li:last-child a {
-    background: #3c59ef;
-}
-.top-footer .block-social li a:hover {
-    opacity: .5;
-}
 .bottom-footer {
     font-size: 12px;
 }
-.block-legal {
-    text-align: right;
-}
-.block-legal li {
-    display: inline-block;
-}
-.block-legal li a {
-    margin-right: 10px;
-    margin-top: 3px;
-    padding-right: 12px;
-    white-space: nowrap;
-    color: #cccccc;
-    font-size: 12px;
-    position: relative;
-}
-.block-legal li a:before {
-    content: "";
-    background: #cccccc;
-    width: 1px;
-    height: 10px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    width: 1px;
-    position: absolute;
-}
-.block-legal li:last-child a {
-    border-right: none;
-    margin-right: 0;
-    padding-right: 0;
-}
-.block-legal li:last-child a:before {
-    content: none;
-}
-/* End fat footer section*/
-
-
-/*Media queries*/
-
 @media screen and (min-width: 600px) and (max-width: 800px) {
     input,
     textarea {
@@ -849,10 +591,6 @@ ul.block-topic li {
     .top-footer .block-social li {
         margin-bottom: 6px;
     }
-    .block-legal {
-        text-align: left;
-        margin-top: 5px;
-    }
     .block-sponsor img {
         width: 100%;
     }
@@ -900,10 +638,6 @@ ul.block-topic li {
     }
     .top-footer .block-social li {
         margin-bottom: 6px;
-    }
-    .block-legal {
-        text-align: left;
-        margin-top: 5px;
     }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
@@ -1000,10 +734,6 @@ ul.block-topic li {
     .top-footer .block-social li {
         margin-bottom: 6px;
     }
-    .block-legal {
-        text-align: left;
-        margin-top: 5px;
-    }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     input,
@@ -1037,15 +767,6 @@ ul.block-topic li {
     .main-slider .slides li {
         height: 500px;
     }
-    h1.large {
-        font-size: 45px;
-    }
-    .hero-content h3 {
-        font-size: 35px;
-    }
-    .hero-content p {
-        font-size: 13px;
-    }
     .col-md-3.col-sm-3.text-right {
         text-align: left;
         margin-top: 10px;
@@ -1077,15 +798,8 @@ ul.block-topic li {
     .block-sponsor img {
         width: 50%;
     }
-    .block-map {
-        display: none;
-    }
     .col-sm-4.col-sm-offset-2.text-center {
         margin-bottom: 20px;
-    }
-    .block-legal {
-        text-align: left;
-        margin-top: 5px;
     }
     .top-footer .block-social {
         margin-bottom: 20px;
@@ -1122,15 +836,6 @@ ul.block-topic li {
     }
     .main-slider .slides li {
         height: 500px;
-    }
-    h1.large {
-        font-size: 30px;
-    }
-    .hero-content h3 {
-        font-size: 25px;
-    }
-    .hero-content p {
-        font-size: 15px;
     }
     .col-md-3.col-sm-3.text-right {
         text-align: left;
@@ -1175,9 +880,6 @@ ul.block-topic li {
     .block-sponsor img {
         width: 50%;
     }
-    .block-map {
-        display: none;
-    }
 
     .col-sm-4.col-sm-offset-2.text-center {
         margin-bottom: 20px;
@@ -1187,9 +889,5 @@ ul.block-topic li {
     }
     .top-footer .block-social {
         margin-bottom: 20px;
-    }
-    .block-legal {
-        text-align: left;
-        margin-top: 5px;
     }
 }
