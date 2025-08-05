@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'fontello';
-  font-display: optional;
+  font-display: swap;
   src: url('../font/fontello.eot?46579446');
   src: url('../font/fontello.eot?46579446#iefix') format('embedded-opentype'),
        url('../font/fontello.woff2?46579446') format('woff2'),
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    font-display: optional;
+    font-display: swap;
     src: url('../font/fontello.svg?46579446#fontello') format('svg');
   }
 }
@@ -59,5 +59,6 @@
 
 .icon-twitter:before { content: '\e9f5'; } /* 'î§µ' */
 .icon-youtube:before { content: '\ea01'; } /* 'î¨' */
+.icon-linkedin:before { content: '\e9d1'; } /* 'î§‘' */
 .icon-linkedin-1:before { content: '\eb03'; } /* 'î¬ƒ' */
 .icon-instagram-1:before { content: '\eb10'; } /* 'î¬' */
