@@ -37,7 +37,7 @@
         animation: "fade",
         slideshow: true,
         directionNav: false,
-        controlNav: true,
+        controlNav: false,
         pauseOnAction: false,
         animationSpeed: 1000
     });
