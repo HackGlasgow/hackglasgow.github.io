@@ -711,3 +711,7 @@ a[href^="https://maps.google.com/maps"] {
     background: none !important;
 }
 /*End misc */
+sup {
+    font-size: 0.8em;
+    vertical-align: super;
+}
