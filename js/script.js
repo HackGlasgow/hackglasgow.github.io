@@ -10,24 +10,6 @@
         offset: -50
     });
 
-    $('.slider').flexslider({
-        animation: "fade",
-        slideshow: true,
-        directionNav: true,
-        controlNav: false,
-        pauseOnAction: false,
-        animationSpeed: 500
-    });
-
-    $('.review-slider').flexslider({
-        animation: "fade",
-        slideshow: true,
-        directionNav: false,
-        controlNav: false,
-        pauseOnAction: false,
-        animationSpeed: 1000
-    });
-
     var mobileBtn = $('.mobile-but');
     var nav = $('.main-nav ul');
     var navHeight = nav.height();

@@ -17,10 +17,9 @@
          <meta property="twitter:image" content="https://hackglasgow.live/img/metatag.png" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" defer/>
-         <link rel="preload" as="image" href="img/hg2025-hero.webp" fetchpriority="high" type="image/webp">
+         <link rel="preload" as="image" href="img/hg-logotxt.webp" fetchpriority="high" type="image/webp">
+         <link rel="preload" as="image" href="img/hg-hero-gradient.webp" fetchpriority="high" type="image/webp">
          <link rel="preload" as="image" href="img/welcome.webp" fetchpriority="high" type="image/webp">
-         <link rel="preload" href="css/flexslider.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-         <noscript><link rel="stylesheet" href="css/flexslider.css"></noscript>
          <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
          <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
          <link rel="preload" href="css/venobox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -41,8 +40,12 @@
                <div class="main-slider slider">
                   <ul class="slides">
                      <li>
-                        <div class="background-img">
-                           <img src="img/hg2025-hero.webp" alt="hero banner photo of the Hack Glasgow organisers"  fetchpriority="high">
+                        <div class="inner-hero fade-out f0123" style="background-image: url('img/hg-hero-gradient.webp'); height: 900px">
+                           <div class="container hero-content">
+                              <div class="row vertical-align tickets">
+                                 <img loading="lazy" src="img/welcome.webp" alt="welcome text reading welcome to hack glasgow">
+                              </div>
+                           </div>
                         </div>
                      </li>
                   </ul>
@@ -75,13 +78,6 @@
                      </div>
                   </div>
                </header>
-               <div class="inner-hero fade-out">
-                  <div class="container hero-content">
-                     <div class="row vertical-align tickets">
-                        <img loading="lazy" src="img/welcome.webp" alt="welcome text reading welcome to hack glasgow">
-                     </div>
-                  </div>
-               </div>
             </section>
             <section id="moreinfo" class="about pt-20 pb-60">
                <div class="container">
@@ -385,21 +381,12 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-6 col-sm-6 ">
-                        <h3 class="sub-title-0  mb-20"><span class="gradient-text">Feedback</span><br> 
+                        <h3 class="sub-title-0  mb-20"><span class="gradient-text">Feedback</span>
                         </h3>
-                        <div class="review-slider flexslider">
-                           <ul class="slides">
+                        <div class="feedback">
+                           <ul>
                               <li>
-                                 <blockquote>"The selection of talks was brilliant, the main area was lively but not cramped, catering was just right, and the choice to keep the focus on the talks rather than cramming in other activities and workshops was something I'd never realise could make such a positive difference. Absolutely brilliant event, cannot congratulate and thank the team enough, and keeping my fingers crossed that they'll be doing it again!"</blockquote>
-                              </li>
-                              <li>
-                                 <blockquote>"Santi hacking AWS right there on stage was pretty cool. The last session was seriously amazingly educational and hilarious. And having a wide range of speakers was also great. Even the food was great. Although, any event that has a lockpicking table and an arcade sets up the bar pretty high :D. Also, I can't highlight enough how amazing it was to have access to tea and coffee throughout the event. It's a small thing but it really made a difference."</blockquote>
-                              </li>
-                              <li>
-                                 <blockquote>"I thought overall that Hack Glasgow was an amazingly put together event, everything was on-time and organised very well. The formatting of the event was easy to navigate and did not cause confusion which I have found to be a problem at other events due to their lack of signage. I would 100% love to attend Hack Glasgow again next year."</blockquote>
-                              </li>
-                              <li>
-                                 <blockquote>"Great work, especially for a first time event and you can see the amount of love and effort that went into it. Thanks for doing something in Scotland as it’s been a long time. Portal to another event was a cool idea"</blockquote>
+                                 <p>"The selection of talks was brilliant, the main area was lively but not cramped, catering was just right, and the choice to keep the focus on the talks rather than cramming in other activities and workshops was something I'd never realise could make such a positive difference. Absolutely brilliant event, cannot congratulate and thank the team enough, and keeping my fingers crossed that they'll be doing it again!"</p>
                               </li>
                            </ul>
                         </div>
@@ -429,15 +416,9 @@
                         <h3 class="sub-title-0  mb-20"><span class="gradient-text">No hidden drops, no mates rates,</span><br> 
                            <span class="gradient-text">no "don't you know who I am"</span>
                         </h3>
-                        <div class="review-slider flexslider">
-                           <ul class="slides">
-                              <li>
-                                 <p class="title-lead">Equality, transparency, and fairness is at the core of who we are both as a community, and who we are as Hack Glasgow. We want everyone to be treated fairly, and have an equal opportunity at attending conferences. That's why we don't do multiple ticket drops, discounts, or free tickets.</p>
-                                 <p class="title-lead">As part of our commitment to encourage more individuals to attend conferences like ours who otherwise wouldn't be able to due to financial reasons, we operate a Pay it Forward scheme - allowing generous individuals the ability to purchase ticket to be donated to a Pay it Forward applicant.</p>
-                                 <p class="title-lead">If you or someone you know could benefit from a Pay it Forward ticket, these can be applied for <a href="https://payitforward.hackglasgow.live" class="gradient-text link" name="pay it forward link">here</a>.</p>
-                              </li>
-                           </ul>
-                        </div>
+                        <p class="title-lead">Equality, transparency, and fairness is at the core of who we are both as a community, and who we are as Hack Glasgow. We want everyone to be treated fairly, and have an equal opportunity at attending conferences. That's why we don't do multiple ticket drops, discounts, or free tickets.</p>
+                        <p class="title-lead">As part of our commitment to encourage more individuals to attend conferences like ours who otherwise wouldn't be able to due to financial reasons, we operate a Pay it Forward scheme - allowing generous individuals the ability to purchase ticket to be donated to a Pay it Forward applicant.</p>
+                        <p class="title-lead">If you or someone you know could benefit from a Pay it Forward ticket, these can be applied for <a href="https://payitforward.hackglasgow.live" class="gradient-text link" name="pay it forward link">here</a>.</p>
                      </div>
                      <div class="col-md-6">
                         <div class="col-sm-6">
@@ -603,7 +584,6 @@
             </footer>
          </div>
          <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
-         <script src="js/jquery.flexslider-min.js" type="text/javascript" defer></script>
          <script src="js/smooth-scroll.js" type="text/javascript" defer></script>
          <script src="js/venobox.min.js" type="text/javascript" defer></script>
          <script src="js/script.js" type="text/javascript" defer></script>
