@@ -1,27 +1,14 @@
 (function($) {
     "use strict";
-
-    // Windows load
-
     $(window).on("load", function() {
-
-        // Site loader 
-
         $(".loader-inner").fadeOut();
         $(".loader").delay(200).fadeOut("slow");
-
     });
-
-
-    // Scroll to
 
     $('a.scroll').smoothScroll({
         speed: 800,
         offset: -50
     });
-
-
-    // Slider
 
     $('.slider').flexslider({
         animation: "fade",
@@ -32,7 +19,6 @@
         animationSpeed: 500
     });
 
-
     $('.review-slider').flexslider({
         animation: "fade",
         slideshow: true,
@@ -41,10 +27,6 @@
         pauseOnAction: false,
         animationSpeed: 1000
     });
-
-
-
-    // Mobile menu
 
     var mobileBtn = $('.mobile-but');
     var nav = $('.main-nav ul');
@@ -76,28 +58,10 @@
 
     });
 
-
-
-    // Append images as css background
-
     $('.background-img').each(function() {
         var path = $(this).children('img').attr('src');
         $(this).css('background-image', 'url("' + path + '")').css('background-position', 'initial');
     });
-
-
-
-
-    // Count down setup
-
-    $('.countdown').countdown('2017/8/20', function(event) {
-        $(this).html(event.strftime('%D days %H:%M:%S'));
-    });
-
-
-
-
-    // Tabbed content 
 
     $(".block-tabs li").on("click", function() {
         if (!$(this).hasClass("active")) {
@@ -110,37 +74,19 @@
         }
     });
 
-
-    // Zoom	effect
-
     $('.block-gallery li').on("mouseenter", function() {
         $(this).closest('.gallery').find('.block-gallery li').removeClass('active');
         $(this).addClass('active');
     });
-
-
 
     $('.block-ticket').on("mouseenter", function() {
         $(this).closest('.tickets').find('.block-ticket').removeClass('active');
         $(this).addClass('active');
     });
 
-
-
-
-    // Images zoom 
-
     $('.venobox').venobox({
         titleattr: 'data-title',
         numeratio: true
     });
-
-
-
-
-
-
-  
-
 
 })(jQuery);
