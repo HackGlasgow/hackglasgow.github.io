@@ -1,0 +1,342 @@
+[
+  {
+    "eventDate": "2025-04-26",
+    "eventLocation": "Platform Glasgow, G2 8DL",
+    "eventHashtag": "#HackGlasgow2025",
+    "eventPlaylist": "https://www.youtube.com/watch?v=dJhmtF_ZX6U&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq",
+    "crew": [
+      {
+        "crewName": "grom",
+        "crewLinkedIn": "https://www.linkedin.com/in/grommoss/"
+      },
+      {
+        "crewName": "rosie",
+        "crewLinkedIn": "https://www.linkedin.com/in/rosieladycyber/"
+      },
+      {
+        "crewName": "sam",
+        "crewLinkedIn": "https://www.linkedin.com/in/safesecs/"
+      },
+      {
+        "crewName": "roachy",
+        "crewLinkedIn": "https://www.linkedin.com/in/paul-r-a0aa698/"
+      },
+      {
+        "crewName": "maya",
+        "crewLinkedIn": "https://www.linkedin.com/in/maya-boeckh/"
+      },
+      {
+        "crewName": "eilidh",
+        "crewLinkedIn": "https://www.linkedin.com/in/eilidh-h-ratcliffe-080035197/"
+      },
+      {
+        "crewName": "geo",
+        "crewLinkedIn": "https://www.linkedin.com/in/john-d-4326881a0/"
+      },
+      {
+        "crewName": "paul",
+        "crewLinkedIn": "https://www.linkedin.com/in/paul-stewart-tecc/"
+      },
+      {
+        "crewName": "mike",
+        "crewLinkedIn": "https://www.linkedin.com/in/michael-whitehead-0x0/"
+      },
+      {
+        "crewName": "mel",
+        "crewLinkedIn": "https://www.linkedin.com/in/melanie-scott-4a23bb198/"
+      },
+      {
+        "crewName": "zafrin",
+        "crewLinkedIn": "https://www.linkedin.com/in/zafrin-malek-mithila/"
+      },
+      {
+        "crewName": "colin",
+        "crewLinkedIn": "https://www.linkedin.com/in/colin-mckay-campbell-161479166/"
+      },
+      {
+        "crewName": "sarah",
+        "crewLinkedIn": "https://www.linkedin.com/in/sarah-williams-anguasec/"
+      },
+      {
+        "crewName": "jon",
+        "crewLinkedIn": "https://www.linkedin.com/in/boredcyber/"
+      },
+      {
+        "crewName": "kit",
+        "crewLinkedIn": "https://www.linkedin.com/in/kitaljard/"
+      },
+      {
+        "crewName": "jason",
+        "crewLinkedIn": "https://www.linkedin.com/in/jasonhalley/"
+      },
+      {
+        "crewName": "jamie",
+        "crewLinkedIn": "https://www.linkedin.com/in/j-dunbar/"
+      },
+      {
+        "crewName": "anthony",
+        "crewLinkedIn": "https://www.linkedin.com/in/anthony-m-sanders/"
+      }
+    ],
+    "speakers": [
+      {
+        "speakerName": "Cary Hendricks",
+        "speakerBio": "Cyber security mentor, trainer, hacking and forensics. Had a gray career helping law enforcement internationally. Nuts for BBQs.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/figjam/",
+        "speakerVideo": ""
+      },
+      {
+        "speakerName": "Mark Saunders",
+        "speakerBio": "[REDACTED]",
+        "speakerLinkedIn": "https://www.linkedin.com/in/mark-saunders-9473a624/",
+        "speakerVideo": ""
+      },
+      {
+        "speakerName": "Calum Baird",
+        "speakerBio": "Calum Baird has over 9 years of law enforcement experience at Police Scotland including working as a Detective Constable in the Digital Forensics Unit before moving to Cybercrime Investigations - a department specialising in the investigation of cyber dependent crime including ransomware, network intrusion, and cryptocurrency fraud. Calum now works as a Digital Forensics and Incident Response Consultant at Systal Technology Solutions, a Glasgow based international Managed Security Service Provider (MSSP).",
+        "speakerLinkedIn": "https://www.linkedin.com/in/calum-baird/",
+        "speakerVideo": ""
+      },
+      {
+        "speakerName": "James McGoldrick",
+        "speakerBio": "James McGoldrick is the Head of Security Services at Systal Technology Solutions. Prior to working at Systal James worked as a Detective Constable within the Digital Forensics Unit at Police Scotland, often working on operation NOCAP (National Online Child Abuse Prevention). Before moving to this role, James worked in Police Scotland's Digital Transformation Team, delivering significant organisational change to digitise modern policing.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/james-mcg/",
+        "speakerVideo": ""
+      },
+      {
+        "speakerName": "Michael Whitehead",
+        "speakerBio": "\"Meh, I'll come up with something semi-witty if it gets accepted!\"",
+        "speakerLinkedIn": "https://www.linkedin.com/in/michael-whitehead-0x0/",
+        "speakerVideo": "https://www.youtube.com/watch?v=iOEU-LScOFc&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=2"
+      },
+      {
+        "speakerName": "Rosie Anderson",
+        "speakerBio": "Rosie Anderson is Head of Strategic Solutions for th4ts3cur1ty.company AKA Magical Genie Person. Having previously spent two decades talking to businesses to solve their hiring challenges, Rosie now uses those skills to help businesses solve their cybersecurity challenges. Rosie also founded BSides Lancashire, is a Director of BSides Leeds and restarted the Manchester 2600 Hacker Community, the only 2600 to be run by two women.\n\nRosie also is Head of Industry Mentoring for Capslock, ensuring that the trainees who are retraining have access to industry mentors as part of their journey. She is also part of the Virtue Council for Hacking Games. Giving back is important to her, and she loves the pay-it-forward mentality.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/rosieladycyber/",
+        "speakerVideo": ""
+      },
+      {
+        "speakerName": "Liam Follin",
+        "speakerBio": "Liam is a Dual CHECK Team Leader and Lead Penetration Tester at KPMG, but really just a nerd with a love of hacking web apps. He loves writing tools, training pentesters, and nice Irish whisky. Not necessarily in that order.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/liam-follin/",
+        "speakerVideo": "https://www.youtube.com/watch?v=i4IzoJQdPhM&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=3"
+      },
+      {
+        "speakerName": "Santi Abastante",
+        "speakerBio": "Former Police Officer from Argentina, now a Cloud Incident Responder and Security Engineer with over 10 years of IT experience. A Digital Nomad an international speaker, I've presented on Cloud Security and Incident Response at Ekoparty, FIRST, Virus Bulletin (three times), Hack.Lu, and various BSides events worldwide. I hold a Bachelor's degree in Information Security and an MBA (Master in Business Administration).",
+        "speakerLinkedIn": "https://www.linkedin.com/in/sabastante/",
+        "speakerVideo": ""
+      },
+      {
+        "speakerName": "Lennaert Oudshoorn",
+        "speakerBio": "As an accomplished hacker, Lennaert has found vulnerabilities with many large organizations including the Dutch government. As a Head of Triage at Intigriti, Lennaert is involved with many different vulnerabilities & security issues on a daily basis. In addition to his professional exploits, he still reports vulnerabilities \"on the side\" in his role as a volunteer with the Dutch Institute for Vulnerability Disclosure (DIVD). At DIVD, Lennaert has worked a number of big cases including some that made international headlines, such as the big July 2021 ransomware incident involving Kaseya.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/lennaertoudshoorn/",
+        "speakerVideo": "https://www.youtube.com/watch?v=EqAE6Xxf2VA&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=4"
+      },
+      {
+        "speakerName": "maya boeckh",
+        "speakerBio": "maya edits text files, throws some of them at interpreters and compilers, with the objective of either breaking things or fixing things... but you can't *really* be sure until it happens.\n\nThey are a cybersecurity practitioner with interest in application security as well as a software engineer, and a life-long student (just not in academia anymore... thankfully).\n\nOn the side, she helps out with communities, likes to build events and help people get their feet wet in this field we call \"cybersecurity\".",
+        "speakerLinkedIn": "https://www.linkedin.com/in/maya-boeckh/",
+        "speakerVideo": "https://www.youtube.com/watch?v=prW_VDYZJZM&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=5"
+      },
+      {
+        "speakerName": "Andrew Finlayson",
+        "speakerBio": "I am a pentester at KPMG, with experience in infrastructure, web apps, and purple teaming.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/andrew-finlayson-431b60184/",
+        "speakerVideo": ""
+      },
+      {
+        "speakerName": "James Bore",
+        "speakerBio": "\"Insert bio here\"",
+        "speakerLinkedIn": "https://www.linkedin.com/in/jbore/",
+        "speakerVideo": "https://www.youtube.com/watch?v=RcA5XW0GWm4&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=6"
+      },
+      {
+        "speakerName": "Tom Blue",
+        "speakerBio": "Tom is a 3rd year student at Lancaster and intelligence analyst at CrowdStrike. He has a background in security engineering/research, particularly around embedded systems security, and most of his current work revolves around analysis/reverse engineering of nationstate malware.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/tom-blue/",
+        "speakerVideo": "https://www.youtube.com/watch?v=Edok8PRKk3c&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=7"
+      },
+      {
+        "speakerName": "Alana Witten",
+        "speakerBio": "Alana is a final year student, graduating soon. She has worked in threat intelligence for almost 2 years, and then interned at Apple as a security engineer. Her previous research involves tracking criminal infrastructure and doxxing APTs.\n\nWhen she is not nerd snipped by Bleeping Computer articles or CTF challenges, she can be found in a rock climbing gym or exploring new cafes, documenting them in an endless spreadsheet (https://brownbearsec.github.io).",
+        "speakerLinkedIn": "https://www.linkedin.com/in/alana-witten-b5753a225/",
+        "speakerVideo": "https://www.youtube.com/watch?v=Edok8PRKk3c&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=7"
+      },
+      {
+        "speakerName": "Arohi Naik",
+        "speakerBio": "Arohi Naik is a cybersecurity professional passionate about securing digital infrastructures with a focus on human-centered security. Holding a Master’s in Cybersecurity, she brings expertise in threat intelligence, incident response, and risk management, coupled with a deep understanding of how human behavior shapes security practices.\n\nArohi advocates for a human-centric approach, where psychology, culture, and individual behaviours play a pivotal role in creating resilient cybersecurity solutions. As a strong feminist, she is committed to fostering diversity and empowering women in the cybersecurity field.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/arohi-naik/",
+        "speakerVideo": "https://www.youtube.com/watch?v=QorQwSH7mkk&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=8"
+      },
+      {
+        "speakerName": "Ian Thornton-Trump",
+        "speakerBio": "Ian Thornton-Trump CD is an ITIL certified IT professional with 30 years of experience in IT security and information technology. From 1989 to 1992, Ian served with the Canadian Forces (CF), Military Intelligence Branch; in 2002, he joined the CF Military Police Reserves and retired as a Public Affairs Officer in 2013. After a year with the RCMP as a Criminal Intelligence Analyst, Ian worked as a cyber security analyst/consultant for multi-national insurance, banking, and regional health care verticals. With a deep background in cyber threat intelligence Ian was previously the CISO for Cyjax Ltd., a UK based threat intelligence provider to enterprise customers. As a CISO at Inversion6 Ian’s role is to spearhead the efforts to duplicate the success of Inversion6 USA by offering fractional CISO and advanced cyber security solutions in the UK and EU markets. Ian has deep experience with the threats facing small, medium and enterprise businesses. His research and dynamic speaking style have made him a sought-after cyber security consultant specialising in building security operations providing services as a vCISO, and sharing his passion for building effective threat intelligence programs for small, medium, and enterprise organisations.",
+        "speakerLinkedIn": "https://www.linkedin.com/in/ian-thornton-trump-cd-77473a26/",
+        "speakerVideo": "https://www.youtube.com/watch?v=sT0j7VL14Ok&list=PL5HAhh4PPAFfULxYGE7yO4wbNUtK_G5sq&index=9"
+      }
+    ],
+    "schedule": [
+      {
+        "speakerName": "",
+        "talkTitle": "Doors open & registration",
+        "talkAbstract": "",
+        "timeUTC": "09:00",
+        "length": "00:45",
+        "stage": ""
+      },
+      {
+        "speakerName": "Hack Glasgow oragnisers",
+        "talkTitle": "Opening Remarks",
+        "talkAbstract": "",
+        "timeUTC": "09:45",
+        "length": "00:15",
+        "stage": ""
+      },
+      {
+        "speakerName": "Cary Hendricks",
+        "talkTitle": "Hacking things with AI stuff",
+        "talkAbstract": "Threat or treat? Can the boom in AI make security easier or much harder? Exploring how you can start in your decisions and see the wonderful world of hacking with AI.",
+        "timeUTC": "10:00",
+        "length": "00:55",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Mark Saunders",
+        "talkTitle": "Why Did the Company Get Defrauded? BECause...",
+        "talkAbstract": "An introduction to Business Email Compromises and the lucrative frauds they can lead to. Stories from Incident Response and some strategies to mitigate the impacts.",
+        "timeUTC": "10:00",
+        "length": "00:55",
+        "stage": "Platform 2"
+      },
+      {
+        "speakerName": "Michael Whitehead",
+        "talkTitle": "Securing Values: The Ethics of Cyber Security",
+        "talkAbstract": "Security isn't a game and it's not about playing God - every action we take can have a human cost. This talk walks the ethical tightrope of cyber security: the dangers of bias, the lure of control, and the responsibility to act with integrity; let's talk about where to tread, and how to avoid the missteps that could tip us off-balance.",
+        "timeUTC": "11:00",
+        "length": "00:25",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Calum Baird & James McGoldrick",
+        "talkTitle": "A Dual Perspective on Cybercrime",
+        "talkAbstract": "Cybercrime is complex, impacting all sectors, countries, organisations and individuals. Both law enforcement and private sector companies have a role in Investigating cybercrime, working together to ensure that threats are mitigated and (where possible) cybercriminals are brought to justice.\n\nCalum and James worked as Detectives in various technical roles at Police Scotland, including the Digital Forensics Unit, Operation NOCAP/Parror (tackling child sexual exploitation and abuse), and Cybercrime Investigations. Now both work in the private sector for a Glasgow based international Managed Security Service Provider (MSSP), with Calum working as a Digital Forensics and Incident Response Consultant and James working as the Head of Security Services.\n\nIn this talk they will provide their insights into investigating cybercrime, from both a public sector and private sector perspective, before opening the floor to questions. The talk aims to cover:\n- Description of cyber enabled and cyber dependent crime\n- Current United Kingdom legislation for hacking\n- Investigative capabilities and limitations in the public sector\n- Investigative capabilities and limitations in the private sector\n- The benefits and concerns of law enforcement involvement in private sector investigations\n- The importance of intelligence in investigations\n- The importance of provenance in investigations and litigation\n- The importance of record keeping in investigations and litigation.",
+        "timeUTC": "11:00",
+        "length": "00:25",
+        "stage": "Platform 2"
+      },
+      {
+        "speakerName": "Rosie Anderson",
+        "talkTitle": "Enshittification of the Industry",
+        "talkAbstract": "In 2023 Cory Doctorows talked about the enshittification of the Internet, but in the humdrum world of everyday Infosec, we are battling that same enshittification.\n\nThe enshittification of our industry is a problem that too few are aware of, let alone fight against.\n\nThis talk will discuss where enshittification is happening, from Vendors, Engaging and Hiring New Talent, Silos, Saboteurs, Bullies & Blag Artists, the Race to CISO plus wherever the audience wants to discuss enshittification.\n\nIt will end with a call for action from the community to take back and protect the image of our industry. Come and join the conversation!",
+        "timeUTC": "11:30",
+        "length": "00:25",
+        "stage": "Platform 2"
+      },
+      {
+        "speakerName": "",
+        "talkTitle": "Lunch",
+        "talkAbstract": "",
+        "timeUTC": "12:00",
+        "length": "01:00",
+        "stage": ""
+      },
+      {
+        "speakerName": "Liam Follin",
+        "talkTitle": "How to get away with hacking",
+        "talkAbstract": "You see it on LinkedIn all the time. \"Here's how you break into cyber...\" followed by a list of resources longer than the average Christmas shopping receipt. Half the resources on the list are questionable at best, and there is no structure whatsoever. Then, the few poor souls who do actually grind their way through this arduous mountain of content, end up in an interview and realise that they're missing large portions of key knowledge.\n\nThis talk follows the paths of multiple people into the pentesting industry, from traditional degrees, to marine biology, to apprenticeships, and everything in between. There's more than one way to skin a cat, and contrived one-size-fits-all approaches are out of date - over the course of 50 minutes we will follow 4 from zero to hero.\n\nAttendees can expect an honest summary of the pentesting industry - and it's not all sunshine and rainbows. We'll go through an average day in the life, a summary of the professional qualifications you'll need (and the ones you won't), alongside the mentality you need to survive as a hacker for hire.",
+        "timeUTC": "13:00",
+        "length": "00:55",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Santi Abastante",
+        "talkTitle": "Attacking AWS - From initial access to hardcore persistence",
+        "talkAbstract": "Cloud platforms like Amazon Web Services (AWS) are foundational to many critical infrastructures and enterprise applications, making them prime targets for attackers. In this session, we will not only explore the most relevant attack vectors cybercriminals use to compromise AWS infrastructures but will also simulate these attacks using known threat actor techniques in an adversary emulation context. From initial access to hardcore persistence, this talk will provide a comprehensive look at how attackers operate in AWS environments.\nWe will take a technical journey through the tactics, techniques, and procedures (TTPs) employed by attackers at every stage of the threat lifecycle, aligned with the MITRE ATT&CK framework. We\u2019ll start by reviewing common methods of initial access, such as exploiting exposed credentials or vulnerabilities in services like IAM, Lambda, and EC2. From there, we\u2019ll detail how attackers escalate privileges, move laterally, and evade detection from tools like CloudTrail.\nThe session will conclude with an in-depth look at advanced persistence techniques in AWS, including the manipulation of IAM policies, backdooring Lambda functions or Docker containers, and tampering with logs. Along the way, we\u2019ll demonstrate how security teams can implement defensive and detection strategies to mitigate these risks. By leveraging AWS-native services and third-party tools, attendees will learn how to enhance their incident response capabilities.\n\nThis hands-on session will give attendees practical, technical insights into AWS security, adversary behavior, and how to better defend against sophisticated, persistent attacks. With only two slides and full hands-on experience, this talk ensures deep technical immersion.",
+        "timeUTC": "13:00",
+        "length": "00:55",
+        "stage": "Platform 2"
+      },
+      {
+        "speakerName": "Lennaert Oudshoorn",
+        "talkTitle": "Getting started in bug bounty, from picking a program to getting your first report triaged",
+        "talkAbstract": "In this talk we will dive head first in to the first few steps as an aspiring bug bounty hunter, practical tips around selecting which programs to hack on, which approach to take to finding bugs, and how to write a clear report that sails through triage. The session contains many practical tips around the non-technical aspects of this but will also try to give some technical insights the listeners can directly apply to their bug hunting.",
+        "timeUTC": "14:00",
+        "length": "00:25",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Calum Baird",
+        "talkTitle": "Forensic Acquisition of Soldered Storage Laptops (and others) Using Kali Linux",
+        "talkAbstract": "Forensic acquisition is an essential skill for digital forensics and investigating cybercrime and security incidents. The ability to forensically capture data using a repeatable process is necessary for ensuring the integrity of evidence, allowing findings to be presented and accepted in litigation and at court.\n\nWhilst traditional deadbox forensic techniques are commonplace in forensic training courses there is one technique is rarely taught: extracting data from integrated storage laptops. \n\nPrior to M.2 solid state drives (SSDs) becoming more widespread, embedded MultiMediaCard (eMMC) storage was a popular storage option for laptops and notebooks offering a slimline, impact resistant, and fast storage option at a relatively low cost.  Many laptops and notebooks still in circulation still use eMMC storage including (but not limited to):\n- ASUS E210/E410/E510 Laptops\n- Acer Aspire 3 A317-55P/A315-58/TravelMate B3/BR1100C Laptops\n- Lenovo Ideapad 1i/Slim 1i/3i Laptops\n- HP Stream 11-ak0027na/14s-dq0518sa/11-ak0515sa/11-ak0516sa Laptops\n\nMost digital forensics training courses focus on removing hard disk drives (HDDs) and SSDs to conduct forensic imaging and analysis however this is simply not feasible with eMMC storage given that they are embedded and often directly soldered onto motherboards.\n\nThis talk aims to provide guidance on the forensic acquisition of data from eMMC laptops/notebooks using Kali Linux, an open-source Debian-based Linux distribution.  In addition to allowing forensic acquisition of data on integrated (eMMC) storage laptops/notebooks this technique can also be useful in instances where you do not have the time and/or tools available to disassemble and reassemble a device with complex assembly, or instances where you need to travel light.\n\nWhilst this is a blue team focused talk, the ability to image a laptop/computer without disassembly, particularly given that it can be completed with pocket sized flash storage, does have red team applications.",
+        "timeUTC": "14:00",
+        "length": "00:25",
+        "stage": "Platform 2"
+      },
+      {
+        "speakerName": "maya boeckh",
+        "talkTitle": "Yelling at the people and/or the thinking sand isn't helping",
+        "talkAbstract": "The story so far:\nIn the 60's we taught sand how to think.\nThis has made a lot of (very specific) people very angry and been widely (by very specific people) regarded as a bad move.\n\nSo humanity taught sand how to think, and now we're stuck fulfilling JIRA tickets.\nNot exactly what we expected, as we thought the computer would solve all our problems, not make more of them. Such is the irony of the torment nexus.\n\nMemes aside, I wish to talk about the shift in technical literacy, the availability of\n\"too many solutions\", the erosion of knowledge, and how it affects the daily lives of people trying to solve the improbable and spectacular problems spawning at the magical intersection of computers and people.",
+        "timeUTC": "14:30",
+        "length": "00:25",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Andrew Finlayson",
+        "talkTitle": "Terminal velocity: Common command-line controls and bypasses",
+        "talkAbstract": "Is there anything more frustrating than starting a test and the client laptop has locked down access to PowerShell? Yes. Is it more satisfying to bypass it? Also yes.\n\nThis talk will look at:\n- Common PowerShell Restrictions: A look into why organisations limit access to Windows terminals (cmd/PowerShell) and the common methods used to enforce these restrictions.\n- Bypass Techniques: Simple and effective ways to gain access to a PowerShell shell, even when restrictions are in place.\n- Detection Strategies: How to identify when these bypass methods are being used and what steps can be taken to prevent them.",
+        "timeUTC": "14:30",
+        "length": "00:25",
+        "stage": "Platform 2"
+      },
+      {
+        "speakerName": "",
+        "talkTitle": "Break",
+        "talkAbstract": "",
+        "timeUTC": "15:00",
+        "length": "00:30",
+        "stage": ""
+      },
+      {
+        "speakerName": "James Bore",
+        "talkTitle": "Blame the Parents",
+        "talkAbstract": "Why does our whole industry even exist when we've known for decades how to build secure systems?\n\nWhy is there so much investment into the industry, and could this possibly be the cause?\n\nWhy is there so much marketing based on fear, uncertainty, and doubt?\n\nWhy do so many old timers in the industry seem so, so angry, bitter, or cynical all the time?\n\nFind out all the answers in this talk. What's been going wrong for the last eighty years. Why there's no incentive to improve things. Why the Luddites had a really good point (and, of course, what happened to them and is likely to happen to anyone who challenges the way things are too loudly).",
+        "timeUTC": "15:30",
+        "length": "00:25",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Tom Blue & Alana Witten",
+        "talkTitle": "Phishing Kits vs Financial Institutions - History, OSINT and Automation",
+        "talkAbstract": "Financial institutions are prime targets for cybercriminals, and phishing kits have become one of the most effective tools in their arsenal. These pre-packaged, ready-to-deploy kits enable even low-skilled attackers to launch convincing campaigns that steal banking credentials, drain accounts, and fuel the underground fraud economy.\n\nIn this talk, we\u2019ll explore the evolution of phishing kits, from early crude scripts to today\u2019s sophisticated, modular, and service-based models. We\u2019ll discuss how these kits are discovered, dissected, and analysed, sharing key trends, unusual findings, and real-world anecdotes from recent investigations. Additionally, we\u2019ll take a closer look at the business side of phishing kit distribution\u2014examining how cybercriminals sell, trade, and refine these tools in underground forums.\n\nJoin us as we peel back the layers of the phishing kit industry and reveal the mechanics behind one of the most persistent threats to the financial sector.",
+        "timeUTC": "16:00",
+        "length": "00:25",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Arohi Naik",
+        "talkTitle": "Femtech and Data Privacy: What’s at Stake?",
+        "talkAbstract": "The rise of femtech-technologies designed to support women's health-is transforming the way we manage personal health data. From period trackers to fertility apps, these tools offer unprecedented convenience and insights. However, with the immense potential for positive impact comes a serious risk: the privacy and security of our most sensitive data.\n\nThis presentation examines the growing concerns surrounding data collection and usage in femtech apps. While these applications help us understand our bodies better, they also gather highly personal information that, if mishandled, can expose users to security breaches, surveillance, and exploitation. Why is this an urgent issue? Because unlike fitness trackers or social media platforms, femtech apps deal with some of the most intimate and vulnerable aspects of our lives\u2014our health, emotions, and behaviours.\n\nThe discussion will explore the ethical implications of data practices in femtech, questioning whether the data collected is truly necessary or if it\u2019s being over-mined for profit. Can we trust that our data is being protected, or is it being sold to third-party advertisers?\n\nAdditionally, the presentation will discuss solutions for building a privacy-first future in femtech, focusing on decentralised development. Imagine a world where your health data stays where it belongs\u2014with you. This talk will challenge developers, regulators, and users to rethink how we approach digital privacy in femtech.\n\nUltimately, the discussion will address truly at stake: our health, autonomy, and trust. It's time to demand more from the apps we use\u2014and ensure that privacy is not sacrificed in the name of convenience.",
+        "timeUTC": "16:30",
+        "length": "00:25",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Ian Thornton-Trump CD",
+        "talkTitle": "Geopolitics, Climate Change & Cyber: Why Nation States Will Super Charge Espionage and Cyber Attacks",
+        "talkAbstract": "We all know the \"What to Do\" about Cyber. But have we thought about the why? Did we create our own nightmare? Are we economically dependent on cyber criminals to actually reject or even consider reducing cyber crime? Despite all the efforts the danger dials are all pinned into red zone. Ian Thornton-Trump CD explores - with humour and jaded cynicism - why countries are doing what they are doing and why cyber criminals and nation state actors are creating \"unholy alliances\". The data and trends can give us a glimpse at what the future holds for the country, the cyber security industry and \"the baddies\".",
+        "timeUTC": "17:00",
+        "length": "00:55",
+        "stage": "Platform 1"
+      },
+      {
+        "speakerName": "Hack Glasgow organisers",
+        "talkTitle": "Closing remarks",
+        "talkAbstract": "",
+        "timeUTC": "18:00",
+        "length": "00:15",
+        "stage": "Platform 1"
+      }
+    ]
+  }
+]
