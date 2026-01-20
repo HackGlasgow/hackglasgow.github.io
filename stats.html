@@ -33,6 +33,7 @@
          <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
          <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,700&display=swap" rel="stylesheet">
          <script src="https://kit.fontawesome.com/f07cc94742.js" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       </head>
       <body>
          <div class="loader">
@@ -104,23 +105,80 @@
                      <div class="col-sm-12 text-center">
                         <div>
                            <h2 class="title">General stats</h2>
-                           <h2 class="title-lead mt-10">Last updated: Tue 20 Jan 2026 15:38:17 GMT</h2>
+                           <h2 class="title-lead mt-10">Last updated: 2026-01-20 17:53 GMT</h2>
                         </div>
                      </div>
                   </div>
                   <div class="row">
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">Ticket sales (month by month)</h2>
                            <canvas id="myChart"></canvas>
+                           <script>
+                              const ctx = document.getElementById('myChart');
+
+                              new Chart(ctx, {
+                               type: 'line',
+                               data: {
+                                 labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+                                 datasets: [{
+                                   label: '2025',
+                                   data: [52, 59, 10, 6, 13, 43, 116, 54],
+                                   borderWidth: 1
+                                 },{
+                                   label: '2026',
+                                   data: [130],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">Ticket sales (week by week)</h2>
                            <canvas id="myChart2"></canvas>
+                           <script>
+                              const ctx2 = document.getElementById('myChart2');
+
+                              new Chart(ctx2, {
+                               type: 'line',
+                               data: {
+                                 labels: ['1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32'],
+                                 datasets: [{
+                                   label: '2025',
+                                   data: [22,35,18,4,10,5,2,4,2,2,2,0,4,0,0,3,2,4,5,6,2,18,14,31,12,14,51,36,22,26,4,0],
+                                   borderWidth: 1
+                                 },
+                                 {
+                                   label: '2026',
+                                   data: [130],
+                                   borderWidth: 1
+
+                                 }]
+                               },
+                               options: {
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                   </div>
                   <div class="row pt-120 mb-50">
                      <div class="col-sm-12 text-center">
@@ -130,38 +188,237 @@
                      </div>
                   </div>
                   <div class="row">
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">Ticket allocations by type</h2>
                            <canvas id="myChart3"></canvas>
+                           <script>
+                              const ctx3 = document.getElementById('myChart3');
+
+                              new Chart(ctx3, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['General Admission', 'Organiser', 'Crew', 'Speaker', 'Sponsor'],
+                                 datasets: [{
+                                   label: 'Available',
+                                   data: [224,5,19,16,18],
+                                   borderWidth: 1
+                                 },
+                                 {
+                                   label: 'Allocated',
+                                   data: [224,5,19,16,13],
+                                   borderWidth: 1
+
+                                 },
+                                 {
+                                   label: 'Scanned in',
+                                   data: [194,5,18,16,13],
+                                   borderWidth: 1
+
+                                 }]
+                               },
+                               options: {
+                                 indexAxis: 'y',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">Pay it forward</h2>
                            <canvas id="myChart4"></canvas>
+                           <script>
+                              const ctx4 = document.getElementById('myChart4');
+
+                              new Chart(ctx4, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Available', 'Allocated', 'Scanned in'],
+                                 datasets: [{
+                                   label: 'Tickets',
+                                   data: [32,32,26],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(255, 99, 132, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(255, 99, 132)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                   </div>
                   <div class="row mt-50">
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">CFP Submissions</h2>
                            <canvas id="myChart5"></canvas>
+                           <script>
+                              const ctx5 = document.getElementById('myChart5');
+
+                              new Chart(ctx5, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Submissions', 'Accepted', 'Rejected', 'Pulled out'],
+                                 datasets: [{
+                                   label: 'Application',
+                                   data: [24,16,5,3],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(255, 159, 64, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(255, 159, 64)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">Pay it forward applications</h2>
                            <canvas id="myChart6"></canvas>
+                           <script>
+                              const ctx6 = document.getElementById('myChart6');
+
+                              new Chart(ctx6, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Submissions','Accepted', 'Rejected'],
+                                 datasets: [{
+                                   label: 'Applications',
+                                   data: [35,33,2],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(75, 192, 192, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(75, 192, 192)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                   </div>
+
                   <div class="row mt-50">
-                     <div class="col-sm-12 text-center">
+
+                     <div class="col-sm-4 text-center">
+                        <div>
+                           <h2 class="title-lead">Budget allocation</h2>
+                           <canvas id="myChart12"></canvas>
+                           <script>
+                              const ctx12 = document.getElementById('myChart12');
+
+                              new Chart(ctx12, {
+                               type: 'pie',
+                               data: {
+                                 labels: ['Insurance','Supplies','Marketing','AV','Venue','Catering'],
+                                 datasets: [{
+                                   label: 'Cost',
+                                   data: [373,709.25,1746.25,2125.20,10680,14568],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 plugins: {
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(context) {
+                                                let label = context.dataset.label || '';
+
+                                                if (label) {
+                                                    label += ': ';
+                                                }
+                                                if (context.parsed !== null) {
+                                                    label += new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(context.parsed);
+                                                }
+                                                return label;
+                                            }
+                                        }
+                                    }
+                                 }
+                               },
+                              });
+                           </script>
+                        </div>
+                     </div>
+
+                     <div class="col-sm-8 text-center">
                         <div>
                            <h2 class="title-lead">Check-ins by time</h2>
                            <canvas id="myChart7"></canvas>
+                           <script>
+                              const ctx7 = document.getElementById('myChart7');
+
+                              new Chart(ctx7, {
+                               type: 'line',
+                               data: {
+                                 labels: ['07:20', '07:30', '07:40', '08:20', '08:30', '08:40', '09:00', '09:10', '09:20', '09:30', '09:40', '09:50', '10:00', '10:10', '10:20', '10:30', '10:40', '10:50', '11:00', '11:10', '11:20', '11:30', '11:40', '12:00', '12:10', '12:20', '12:40', '12:50', '13:50', '14:00', '14:10', '14:20', '14:30', '15:10', '12:10', '12:20', '22:40'],
+                                 datasets: [{
+                                   label: 'Check-in time',
+                                   data: [9, 5, 1, 6, 1, 1, 3, 67, 33, 27, 16, 15, 6, 7, 3, 3, 1, 3, 1, 2, 1, 5, 2, 3, 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 2, 6, 1],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(75, 192, 192, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(75, 192, 192)',
+                                    ],
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
                   </div>
@@ -170,6 +427,7 @@
                      <div class="col-sm-12 text-center">
                         <div>
                            <h2 class="title">Hack Glasgow 2026</h2>
+                           <p>Stats are still being collected for the 2026 event so may change regularly.</p>
                         </div>
                      </div>
                   </div>
@@ -178,28 +436,241 @@
                         <div>
                            <h2 class="title-lead">Ticket allocations by type</h2>
                            <canvas id="myChart8"></canvas>
+                           <script>
+                              const ctx8 = document.getElementById('myChart8');
+
+                              new Chart(ctx8, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['General Admission', 'Organiser', 'Crew', 'Speaker', 'Sponsor', 'Village', 'Press'],
+                                 datasets: [{
+                                   label: 'Available',
+                                   data: [450,5,25],
+                                   borderWidth: 1
+                                 },
+                                 {
+                                   label: 'Allocated',
+                                   data: [130,5,14],
+                                   borderWidth: 1
+
+                                 },
+                                 {
+                                   label: 'Scanned in',
+                                   data: [],
+                                   borderWidth: 1
+
+                                 }]
+                               },
+                               options: {
+                                 indexAxis: 'y',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">Pay it forward</h2>
                            <canvas id="myChart9"></canvas>
+                           <script>
+                              const ctx9 = document.getElementById('myChart9');
+
+                              new Chart(ctx9, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Available', 'Allocated', 'Scanned in'],
+                                 datasets: [{
+                                   label: 'Tickets',
+                                   data: [24],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(255, 99, 132, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(255, 99, 132)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                   </div>
                   <div class="row mt-50">
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">CFP Submissions (opens March 2026)</h2>
                            <canvas id="myChart10"></canvas>
+                           <script>
+                              const ctx10 = document.getElementById('myChart10');
+
+                              new Chart(ctx10, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Submissions', 'Accepted', 'Rejected', 'Pulled out'],
+                                 datasets: [{
+                                   label: 'Application',
+                                   data: [],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(255, 159, 64, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(255, 159, 64)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true,
+                                     ticks: {
+                                        stepSize: 1
+                                     }
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+
                      <div class="col-sm-6 text-center">
                         <div>
                            <h2 class="title-lead">Pay it forward applications</h2>
                            <canvas id="myChart11"></canvas>
+                           <script>
+                              const ctx11 = document.getElementById('myChart11');
+
+                              new Chart(ctx11, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Submissions','Accepted', 'Rejected'],
+                                 datasets: [{
+                                   label: 'Applications',
+                                   data: [2],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(75, 192, 192, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(75, 192, 192)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true,
+                                     ticks: {
+                                        stepSize: 1
+                                     }
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
                         </div>
                      </div>
+                  </div>
+                  <div class="row mt-50">
+
+                     <div class="col-sm-offset-4 col-sm-4 text-center">
+                        <div>
+                           <h2 class="title-lead">Budget allocation (in progress)</h2>
+                           <canvas id="myChart13"></canvas>
+                           <script>
+                              const ctx13 = document.getElementById('myChart13');
+
+                              new Chart(ctx13, {
+                               type: 'pie',
+                               data: {
+                                 labels: ['Insurance','Venue'],
+                                 datasets: [{
+                                   label: 'Cost',
+                                   data: [379.42,7500],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 plugins: {
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(context) {
+                                                let label = context.dataset.label || '';
+
+                                                if (label) {
+                                                    label += ': ';
+                                                }
+                                                if (context.parsed !== null) {
+                                                    label += new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(context.parsed);
+                                                }
+                                                return label;
+                                            }
+                                        }
+                                    }
+                                 }
+                               },
+                              });
+                           </script>
+                        </div>
+                     </div>
+                     
+                     <!--<div class="col-sm-8 text-center">
+                        <div>
+                           <h2 class="title-lead">Check-ins by time</h2>
+                           <canvas id="myChart14"></canvas>
+                           <script>
+                              const ctx14 = document.getElementById('myChart14');
+
+                              new Chart(ctx14, {
+                               type: 'line',
+                               data: {
+                                 labels: ['07:20', '07:30', '07:40', '08:20', '08:30', '08:40', '09:00', '09:10', '09:20', '09:30', '09:40', '09:50', '10:00', '10:10', '10:20', '10:30', '10:40', '10:50', '11:00', '11:10', '11:20', '11:30', '11:40', '12:00', '12:10', '12:20', '12:40', '12:50', '13:50', '14:00', '14:10', '14:20', '14:30', '15:10', '12:10', '12:20', '22:40'],
+                                 datasets: [{
+                                   label: 'Check-in time',
+                                   data: [],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(75, 192, 192, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(75, 192, 192)',
+                                    ],
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true,
+                                     ticks: {
+                                        stepSize: 1
+                                     }
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
+                        </div>
+                     </div>-->
                   </div>
                </div>
             </section>
@@ -221,328 +692,6 @@
                </div>
             </footer>
          </div>
-         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-         <script>
-           const ctx = document.getElementById('myChart');
-
-           new Chart(ctx, {
-             type: 'line',
-             data: {
-               labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
-               datasets: [{
-                 label: '2025',
-                 data: [52, 59, 10, 6, 13, 43, 116, 54],
-                 borderWidth: 1
-               },{
-                 label: '2026',
-                 data: [129],
-                 borderWidth: 1
-               }]
-             },
-             options: {
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx2 = document.getElementById('myChart2');
-
-           new Chart(ctx2, {
-             type: 'line',
-             data: {
-               labels: ['1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32'],
-               datasets: [{
-                 label: '2025',
-                 data: [22,35,18,4,10,5,2,4,2,2,2,0,4,0,0,3,2,4,5,6,2,18,14,31,12,14,51,36,22,26,4,0],
-                 borderWidth: 1
-               },
-               {
-                 label: '2026',
-                 data: [129],
-                 borderWidth: 1
-
-               }]
-             },
-             options: {
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx3 = document.getElementById('myChart3');
-
-           new Chart(ctx3, {
-             type: 'bar',
-             data: {
-               labels: ['General Admission', 'Organiser', 'Crew', 'Speaker', 'Sponsor'],
-               datasets: [{
-                 label: 'Available',
-                 data: [224,5,19,16,18],
-                 borderWidth: 1
-               },
-               {
-                 label: 'Allocated',
-                 data: [224,5,19,16,13],
-                 borderWidth: 1
-
-               },
-               {
-                 label: 'Scanned in',
-                 data: [194,5,18,16,13],
-                 borderWidth: 1
-
-               }]
-             },
-             options: {
-               indexAxis: 'y',
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx4 = document.getElementById('myChart4');
-
-           new Chart(ctx4, {
-             type: 'bar',
-             data: {
-               labels: ['Available', 'Allocated', 'Scanned in'],
-               datasets: [{
-                 label: 'Tickets',
-                 data: [32,32,26],
-                 borderWidth: 1
-               }]
-             },
-             options: {
-               backgroundColor: [
-                  'rgba(255, 99, 132, 0.5)'
-                  ],
-               borderColor: [
-                  'rgb(255, 99, 132)',
-                  ],
-               indexAxis: 'x',
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx5 = document.getElementById('myChart5');
-
-           new Chart(ctx5, {
-             type: 'bar',
-             data: {
-               labels: ['Submissions', 'Accepted', 'Rejected', 'Pulled out'],
-               datasets: [{
-                 label: 'Application',
-                 data: [24,16,5,3],
-                 borderWidth: 1
-               }]
-             },
-             options: {
-               backgroundColor: [
-                  'rgba(255, 159, 64, 0.5)'
-                  ],
-               borderColor: [
-                  'rgb(255, 159, 64)',
-                  ],
-               indexAxis: 'x',
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx6 = document.getElementById('myChart6');
-
-           new Chart(ctx6, {
-             type: 'bar',
-             data: {
-               labels: ['Submissions','Accepted', 'Rejected'],
-               datasets: [{
-                 label: 'Applications',
-                 data: [35,33,2],
-                 borderWidth: 1
-               }]
-             },
-             options: {
-               backgroundColor: [
-                  'rgba(75, 192, 192, 0.5)'
-                  ],
-               borderColor: [
-                  'rgb(75, 192, 192)',
-                  ],
-               indexAxis: 'x',
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-
-           const ctx7 = document.getElementById('myChart7');
-
-           new Chart(ctx7, {
-             type: 'line',
-             data: {
-               labels: ['07:20', '07:30', '07:40', '08:20', '08:30', '08:40', '09:00', '09:10', '09:20', '09:30', '09:40', '09:50', '10:00', '10:10', '10:20', '10:30', '10:40', '10:50', '11:00', '11:10', '11:20', '11:30', '11:40', '12:00', '12:10', '12:20', '12:40', '12:50', '13:50', '14:00', '14:10', '14:20', '14:30', '15:10', '12:10', '12:20', '22:40'],
-               datasets: [{
-                 label: 'Check-in time',
-                 data: [9, 5, 1, 6, 1, 1, 3, 67, 33, 27, 16, 15, 6, 7, 3, 3, 1, 3, 1, 2, 1, 5, 2, 3, 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 2, 6, 1],
-                 borderWidth: 1
-               }]
-             },
-             options: {
-               backgroundColor: [
-                  'rgba(75, 192, 192, 0.5)'
-                  ],
-               borderColor: [
-                  'rgb(75, 192, 192)',
-                  ],
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx8 = document.getElementById('myChart8');
-
-           new Chart(ctx8, {
-             type: 'bar',
-             data: {
-               labels: ['General Admission', 'Organiser', 'Crew', 'Speaker', 'Sponsor', 'Village', 'Press'],
-               datasets: [{
-                 label: 'Available',
-                 data: [450,5,25],
-                 borderWidth: 1
-               },
-               {
-                 label: 'Allocated',
-                 data: [129,5,14],
-                 borderWidth: 1
-
-               },
-               {
-                 label: 'Scanned in',
-                 data: [],
-                 borderWidth: 1
-
-               }]
-             },
-             options: {
-               indexAxis: 'y',
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx9 = document.getElementById('myChart9');
-
-           new Chart(ctx9, {
-             type: 'bar',
-             data: {
-               labels: ['Available', 'Allocated', 'Scanned in'],
-               datasets: [{
-                 label: 'Tickets',
-                 data: [24],
-                 borderWidth: 1
-               }]
-             },
-             options: {
-               backgroundColor: [
-                  'rgba(255, 99, 132, 0.5)'
-                  ],
-               borderColor: [
-                  'rgb(255, 99, 132)',
-                  ],
-               indexAxis: 'x',
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx10 = document.getElementById('myChart10');
-
-           new Chart(ctx10, {
-             type: 'bar',
-             data: {
-               labels: ['Submissions', 'Accepted', 'Rejected', 'Pulled out'],
-               datasets: [{
-                 label: 'Application',
-                 data: [],
-                 borderWidth: 1
-               }]
-             },
-             options: {
-               backgroundColor: [
-                  'rgba(255, 159, 64, 0.5)'
-                  ],
-               borderColor: [
-                  'rgb(255, 159, 64)',
-                  ],
-               indexAxis: 'x',
-               scales: {
-                 y: {
-                   beginAtZero: true
-                 }
-               }
-             }
-           });
-
-           const ctx11 = document.getElementById('myChart11');
-
-           new Chart(ctx11, {
-             type: 'bar',
-             data: {
-               labels: ['Submissions','Accepted', 'Rejected'],
-               datasets: [{
-                 label: 'Applications',
-                 data: [2],
-                 borderWidth: 1
-               }]
-             },
-             options: {
-               backgroundColor: [
-                  'rgba(75, 192, 192, 0.5)'
-                  ],
-               borderColor: [
-                  'rgb(75, 192, 192)',
-                  ],
-               indexAxis: 'x',
-               scales: {
-                 y: {
-                   beginAtZero: true,
-                   ticks: {
-                      stepSize: 1
-                   }
-                 }
-               }
-             }
-           });
-         </script>
          <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
          <script src="js/smooth-scroll.js" type="text/javascript" defer></script>
          <script src="js/venobox.min.js" type="text/javascript" defer></script>
