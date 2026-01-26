@@ -76,6 +76,14 @@ function replaceBetween(content, start, end, value) {
   return content.replace(regex, `$1 ${value} $2`);
 }
 
+function replaceBetween2(content, start, end, value) {
+  const regex = new RegExp(
+    `(<!-- ${start} -->)[\\s\\S]*?(<!-- ${end} -->)`,
+    "g"
+  );
+  return content.replace(regex, `$1 ${value} $2`);
+}
+
 (async () => {
   const orders = await fetchAllOrders();
 
@@ -148,7 +156,7 @@ function replaceBetween(content, start, end, value) {
   file = replaceBetween(file,"TOTAL_ALLOC_PRESS_START","TOTAL_ALLOC_PRESS_END",alloc.PRESS);
   file = replaceBetween(file,"PIF_START","PIF_END",pifCount);
   
-  file = replaceBetween(file, "LAST_UPDATED_START", "LAST_UPDATED_END", lastUpdated);
+  file = replaceBetween2(file, "LAST_UPDATED_START", "LAST_UPDATED_END", lastUpdated);
 
   fs.writeFileSync(FILE_PATH, file);
 })();
