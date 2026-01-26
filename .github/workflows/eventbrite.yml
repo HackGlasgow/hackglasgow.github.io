@@ -1,0 +1,33 @@
+name: Eventbrite Ticket Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run Eventbrite sync
+        env:
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
+          EVENTBRITE_EVENT_ID: ${{ secrets.EVENTBRITE_EVENT_ID }}
+        run: |
+          node scripts/eventbrite.js
+
+      - name: Commit changes (if any)
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+          else
+            git config user.name "eventbrite-bot"
+            git config user.email "eventbrite-bot@users.noreply.github.com"
+            git add .
+            git commit -m "Update Eventbrite ticket stats"
+            git push
+          fi
