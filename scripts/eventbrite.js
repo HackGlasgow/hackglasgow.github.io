@@ -108,7 +108,7 @@ function replaceBetween2(content, start, end, value) {
 
   for (const order of orders) {
     
-    if (order.status === "cancelled" || order.status === "refunded") {
+    if (order.status === "cancelled" || order.status === "refunded" || (order.refunds && order.refunds.length > 0)) {
       continue;
     }
     
