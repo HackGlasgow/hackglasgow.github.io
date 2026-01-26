@@ -2,7 +2,7 @@ import fs from "fs";
 
 const TOKEN = process.env.EVENTBRITE_TOKEN;
 const EVENT_ID = process.env.EVENTBRITE_EVENT_ID;
-const FILE_PATH = "chart.js";
+const FILE_PATH = "stats.html";
 
 if (!TOKEN || !EVENT_ID) {
   throw new Error("Missing EVENTBRITE_TOKEN or EVENTBRITE_EVENT_ID");
