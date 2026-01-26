@@ -107,9 +107,14 @@ function replaceBetween2(content, start, end, value) {
   let pifCount = 0;
 
   for (const order of orders) {
+    
+    if (att.status === "cancelled" || att.status === "refunded") {
+      continue;
+    }
+    
     for (const att of order.attendees || []) {
-
-      if (att.status === "cancelled" || att.status === "refunded" || att.status === "deleted") {
+      
+      if (att.cancelled || att.refunded) {
         continue;
       }
       
