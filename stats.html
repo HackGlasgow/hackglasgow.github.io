@@ -180,6 +180,258 @@
                      </div>
 
                   </div>
+
+
+                  <div class="row pt-120">
+                     <div class="col-sm-12 text-center">
+                        <div>
+                           <h2 class="title">Hack Glasgow 2026</h2>
+                           <p>Stats are still being collected for the 2026 event so may change regularly.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-6 text-center mt-50">
+                        <div>
+                           <h2 class="title-lead">Ticket allocations by type</h2>
+                           <canvas id="myChart8"></canvas>
+                           <script>
+                              const ctx8 = document.getElementById('myChart8');
+
+                              new Chart(ctx8, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['General Admission', 'Organiser', 'Crew', 'Speaker', 'Sponsor', 'Village', 'Press'],
+                                 datasets: [{
+                                   label: 'Available',
+                                   data: [450,5,20,,,,5],
+                                   borderWidth: 1
+                                 },
+                                 {
+                                   label: 'Allocated',
+                                   data: [/* TOTAL_ALLOC_GA_START */ 137 /* TOTAL_ALLOC_GA_END */,/* TOTAL_ALLOC_ORGANISER_START */ 5 /* TOTAL_ALLOC_ORGANISER_END */,/* TOTAL_ALLOC_CREW_START */ 13 /* TOTAL_ALLOC_CREW_END */,/* TOTAL_ALLOC_SPEAKER_START */ 0 /* TOTAL_ALLOC_SPEAKER_END */,/* TOTAL_ALLOC_SPONSOR_START */ 0 /* TOTAL_ALLOC_SPONSOR_END */,/* TOTAL_ALLOC_VILLAGE_START */ 0 /* TOTAL_ALLOC_VILLAGE_END */,/* TOTAL_ALLOC_PRESS_START */ 0 /* TOTAL_ALLOC_PRESS_END */],
+                                   borderWidth: 1
+
+                                 },
+                                 {
+                                   label: 'Scanned in',
+                                   data: [],
+                                   borderWidth: 1
+
+                                 }]
+                               },
+                               options: {
+                                 indexAxis: 'y',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
+                        </div>
+                     </div>
+
+                     <div class="col-sm-6 text-center mt-50">
+                        <div>
+                           <h2 class="title-lead">Pay it forward</h2>
+                           <canvas id="myChart9"></canvas>
+                           <script>
+                              const ctx9 = document.getElementById('myChart9');
+
+                              new Chart(ctx9, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Available', 'Allocated', 'Scanned in'],
+                                 datasets: [{
+                                   label: 'Tickets',
+                                   data: [/* PIF_START */ 24 /* PIF_END */],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(255, 99, 132, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(255, 99, 132)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="row">
+
+                     <div class="col-sm-6 text-center mt-50">
+                        <div>
+                           <h2 class="title-lead">CFP Submissions (opens March 2026)</h2>
+                           <canvas id="myChart10"></canvas>
+                           <script>
+                              const ctx10 = document.getElementById('myChart10');
+
+                              new Chart(ctx10, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Submissions', 'Accepted', 'Rejected', 'Pulled out'],
+                                 datasets: [{
+                                   label: 'Application',
+                                   data: [],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(255, 159, 64, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(255, 159, 64)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true,
+                                     ticks: {
+                                        stepSize: 1
+                                     }
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
+                        </div>
+                     </div>
+
+                     <div class="col-sm-6 text-center mt-50">
+                        <div>
+                           <h2 class="title-lead">Pay it forward applications</h2>
+                           <canvas id="myChart11"></canvas>
+                           <script>
+                              const ctx11 = document.getElementById('myChart11');
+
+                              new Chart(ctx11, {
+                               type: 'bar',
+                               data: {
+                                 labels: ['Submissions','Accepted', 'Rejected'],
+                                 datasets: [{
+                                   label: 'Applications',
+                                   data: [2],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(75, 192, 192, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(75, 192, 192)',
+                                    ],
+                                 indexAxis: 'x',
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true,
+                                     ticks: {
+                                        stepSize: 1
+                                     }
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="row">
+
+                     <div class="col-sm-offset-4 col-sm-4 text-center mt-50">
+                        <div>
+                           <h2 class="title-lead">Budget allocation (in progress)</h2>
+                           <canvas id="myChart13"></canvas>
+                           <script>
+                              const ctx13 = document.getElementById('myChart13');
+
+                              new Chart(ctx13, {
+                               type: 'pie',
+                               data: {
+                                 labels: ['Insurance','Venue'],
+                                 datasets: [{
+                                   label: 'Cost',
+                                   data: [379.42,7500],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 plugins: {
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(context) {
+                                                let label = context.dataset.label || '';
+
+                                                if (label) {
+                                                    label += ': ';
+                                                }
+                                                if (context.parsed !== null) {
+                                                    label += new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(context.parsed);
+                                                }
+                                                return label;
+                                            }
+                                        }
+                                    }
+                                 }
+                               },
+                              });
+                           </script>
+                        </div>
+                     </div>
+                     
+                     <!--<div class="col-sm-8 text-center mt-50">
+                        <div>
+                           <h2 class="title-lead">Check-ins by time</h2>
+                           <canvas id="myChart14"></canvas>
+                           <script>
+                              const ctx14 = document.getElementById('myChart14');
+
+                              new Chart(ctx14, {
+                               type: 'line',
+                               data: {
+                                 labels: ['07:20', '07:30', '07:40', '08:20', '08:30', '08:40', '09:00', '09:10', '09:20', '09:30', '09:40', '09:50', '10:00', '10:10', '10:20', '10:30', '10:40', '10:50', '11:00', '11:10', '11:20', '11:30', '11:40', '12:00', '12:10', '12:20', '12:40', '12:50', '13:50', '14:00', '14:10', '14:20', '14:30', '15:10', '12:10', '12:20', '22:40'],
+                                 datasets: [{
+                                   label: 'Check-in time',
+                                   data: [],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 backgroundColor: [
+                                    'rgba(75, 192, 192, 0.5)'
+                                    ],
+                                 borderColor: [
+                                    'rgb(75, 192, 192)',
+                                    ],
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true,
+                                     ticks: {
+                                        stepSize: 1
+                                     }
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
+                        </div>
+                     </div>-->
+                  </div>
                   <div class="row pt-120">
                      <div class="col-sm-12 text-center">
                         <div>
@@ -421,257 +673,6 @@
                            </script>
                         </div>
                      </div>
-                  </div>
-
-                  <div class="row pt-120">
-                     <div class="col-sm-12 text-center">
-                        <div>
-                           <h2 class="title">Hack Glasgow 2026</h2>
-                           <p>Stats are still being collected for the 2026 event so may change regularly.</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-sm-6 text-center mt-50">
-                        <div>
-                           <h2 class="title-lead">Ticket allocations by type</h2>
-                           <canvas id="myChart8"></canvas>
-                           <script>
-                              const ctx8 = document.getElementById('myChart8');
-
-                              new Chart(ctx8, {
-                               type: 'bar',
-                               data: {
-                                 labels: ['General Admission', 'Organiser', 'Crew', 'Speaker', 'Sponsor', 'Village', 'Press'],
-                                 datasets: [{
-                                   label: 'Available',
-                                   data: [450,5,25],
-                                   borderWidth: 1
-                                 },
-                                 {
-                                   label: 'Allocated',
-                                   data: [/* TOTAL_ALLOC_GA_START */ 137 /* TOTAL_ALLOC_GA_END */,/* TOTAL_ALLOC_ORGANISER_START */ 5 /* TOTAL_ALLOC_ORGANISER_END */,/* TOTAL_ALLOC_CREW_START */ 13 /* TOTAL_ALLOC_CREW_END */,/* TOTAL_ALLOC_SPEAKER_START */ 0 /* TOTAL_ALLOC_SPEAKER_END */,/* TOTAL_ALLOC_SPONSOR_START */ 0 /* TOTAL_ALLOC_SPONSOR_END */,/* TOTAL_ALLOC_VILLAGE_START */ 0 /* TOTAL_ALLOC_VILLAGE_END */,/* TOTAL_ALLOC_PRESS_START */ 0 /* TOTAL_ALLOC_PRESS_END */],
-                                   borderWidth: 1
-
-                                 },
-                                 {
-                                   label: 'Scanned in',
-                                   data: [],
-                                   borderWidth: 1
-
-                                 }]
-                               },
-                               options: {
-                                 indexAxis: 'y',
-                                 scales: {
-                                   y: {
-                                     beginAtZero: true
-                                   }
-                                 }
-                               }
-                              });
-                           </script>
-                        </div>
-                     </div>
-
-                     <div class="col-sm-6 text-center mt-50">
-                        <div>
-                           <h2 class="title-lead">Pay it forward</h2>
-                           <canvas id="myChart9"></canvas>
-                           <script>
-                              const ctx9 = document.getElementById('myChart9');
-
-                              new Chart(ctx9, {
-                               type: 'bar',
-                               data: {
-                                 labels: ['Available', 'Allocated', 'Scanned in'],
-                                 datasets: [{
-                                   label: 'Tickets',
-                                   data: [/* PIF_START */ 24 /* PIF_END */],
-                                   borderWidth: 1
-                                 }]
-                               },
-                               options: {
-                                 backgroundColor: [
-                                    'rgba(255, 99, 132, 0.5)'
-                                    ],
-                                 borderColor: [
-                                    'rgb(255, 99, 132)',
-                                    ],
-                                 indexAxis: 'x',
-                                 scales: {
-                                   y: {
-                                     beginAtZero: true
-                                   }
-                                 }
-                               }
-                              });
-                           </script>
-                        </div>
-                     </div>
-
-                  </div>
-                  <div class="row">
-
-                     <div class="col-sm-6 text-center mt-50">
-                        <div>
-                           <h2 class="title-lead">CFP Submissions (opens March 2026)</h2>
-                           <canvas id="myChart10"></canvas>
-                           <script>
-                              const ctx10 = document.getElementById('myChart10');
-
-                              new Chart(ctx10, {
-                               type: 'bar',
-                               data: {
-                                 labels: ['Submissions', 'Accepted', 'Rejected', 'Pulled out'],
-                                 datasets: [{
-                                   label: 'Application',
-                                   data: [],
-                                   borderWidth: 1
-                                 }]
-                               },
-                               options: {
-                                 backgroundColor: [
-                                    'rgba(255, 159, 64, 0.5)'
-                                    ],
-                                 borderColor: [
-                                    'rgb(255, 159, 64)',
-                                    ],
-                                 indexAxis: 'x',
-                                 scales: {
-                                   y: {
-                                     beginAtZero: true,
-                                     ticks: {
-                                        stepSize: 1
-                                     }
-                                   }
-                                 }
-                               }
-                              });
-                           </script>
-                        </div>
-                     </div>
-
-                     <div class="col-sm-6 text-center mt-50">
-                        <div>
-                           <h2 class="title-lead">Pay it forward applications</h2>
-                           <canvas id="myChart11"></canvas>
-                           <script>
-                              const ctx11 = document.getElementById('myChart11');
-
-                              new Chart(ctx11, {
-                               type: 'bar',
-                               data: {
-                                 labels: ['Submissions','Accepted', 'Rejected'],
-                                 datasets: [{
-                                   label: 'Applications',
-                                   data: [2],
-                                   borderWidth: 1
-                                 }]
-                               },
-                               options: {
-                                 backgroundColor: [
-                                    'rgba(75, 192, 192, 0.5)'
-                                    ],
-                                 borderColor: [
-                                    'rgb(75, 192, 192)',
-                                    ],
-                                 indexAxis: 'x',
-                                 scales: {
-                                   y: {
-                                     beginAtZero: true,
-                                     ticks: {
-                                        stepSize: 1
-                                     }
-                                   }
-                                 }
-                               }
-                              });
-                           </script>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="row">
-
-                     <div class="col-sm-offset-4 col-sm-4 text-center mt-50">
-                        <div>
-                           <h2 class="title-lead">Budget allocation (in progress)</h2>
-                           <canvas id="myChart13"></canvas>
-                           <script>
-                              const ctx13 = document.getElementById('myChart13');
-
-                              new Chart(ctx13, {
-                               type: 'pie',
-                               data: {
-                                 labels: ['Insurance','Venue'],
-                                 datasets: [{
-                                   label: 'Cost',
-                                   data: [379.42,7500],
-                                   borderWidth: 1
-                                 }]
-                               },
-                               options: {
-                                 plugins: {
-                                    tooltip: {
-                                        callbacks: {
-                                            label: function(context) {
-                                                let label = context.dataset.label || '';
-
-                                                if (label) {
-                                                    label += ': ';
-                                                }
-                                                if (context.parsed !== null) {
-                                                    label += new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(context.parsed);
-                                                }
-                                                return label;
-                                            }
-                                        }
-                                    }
-                                 }
-                               },
-                              });
-                           </script>
-                        </div>
-                     </div>
-                     
-                     <!--<div class="col-sm-8 text-center mt-50">
-                        <div>
-                           <h2 class="title-lead">Check-ins by time</h2>
-                           <canvas id="myChart14"></canvas>
-                           <script>
-                              const ctx14 = document.getElementById('myChart14');
-
-                              new Chart(ctx14, {
-                               type: 'line',
-                               data: {
-                                 labels: ['07:20', '07:30', '07:40', '08:20', '08:30', '08:40', '09:00', '09:10', '09:20', '09:30', '09:40', '09:50', '10:00', '10:10', '10:20', '10:30', '10:40', '10:50', '11:00', '11:10', '11:20', '11:30', '11:40', '12:00', '12:10', '12:20', '12:40', '12:50', '13:50', '14:00', '14:10', '14:20', '14:30', '15:10', '12:10', '12:20', '22:40'],
-                                 datasets: [{
-                                   label: 'Check-in time',
-                                   data: [],
-                                   borderWidth: 1
-                                 }]
-                               },
-                               options: {
-                                 backgroundColor: [
-                                    'rgba(75, 192, 192, 0.5)'
-                                    ],
-                                 borderColor: [
-                                    'rgb(75, 192, 192)',
-                                    ],
-                                 scales: {
-                                   y: {
-                                     beginAtZero: true,
-                                     ticks: {
-                                        stepSize: 1
-                                     }
-                                   }
-                                 }
-                               }
-                              });
-                           </script>
-                        </div>
-                     </div>-->
                   </div>
                </div>
             </section>
