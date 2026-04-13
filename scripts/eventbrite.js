@@ -150,7 +150,7 @@ function replaceBetween2(content, start, end, value) {
   }
 
   const monthlyStr = `[${monthly.join(",")}]`;
-  const weeklyStr = `[${weekly.map(v => v ?? 0).join(",")}]`;
+  const weeklyStr = `[${Array.from({ length: weekly.length }, (_, i) => weekly[i] ?? 0).join(",")}]`;
 
   let file = fs.readFileSync(FILE_PATH, "utf8");
 
