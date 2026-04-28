@@ -1158,11 +1158,9 @@ section.hero .inner-hero {
     color: #999999;
 }
 .block-sponsor img {
-    opacity: .2;
     width: 85%;
 }
 .block-sponsor img:hover {
-    opacity: .4;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
