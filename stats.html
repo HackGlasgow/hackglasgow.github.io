@@ -180,7 +180,40 @@
                      </div>
 
                   </div>
+                  <div class="row">
+                     <div class="col-sm-offset-3 col-sm-6 text-center mt-50">
+                        <div>
+                           <h2 class="title-lead">Ticket sales (monthly cumulative)</h2>
+                           <canvas id="myChart14"></canvas>
+                           <script>
+                              const ctx14 = document.getElementById('myChart14');
 
+                              new Chart(ctx14, {
+                               type: 'line',
+                               data: {
+                                 labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+                                 datasets: [{
+                                   label: '2025',
+                                   data: [32, 91, 100, 106, 117, 157, 269, 323],
+                                   borderWidth: 1
+                                 },{
+                                   label: '2026',
+                                   data:/* MONTHLY_SALES_START */ [145,172,212,231,250] /* MONTHLY_SALES_END */,
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 scales: {
+                                   y: {
+                                     beginAtZero: true
+                                   }
+                                 }
+                               }
+                              });
+                           </script>
+                        </div>
+                     </div>
+                  </div>
 
                   <div class="row pt-120">
                      <div class="col-sm-12 text-center">
