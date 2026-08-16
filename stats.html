@@ -106,7 +106,7 @@
                      <div class="col-sm-12 text-center">
                         <div>
                            <h2 class="title">General stats</h2>
-                           <h2 class="title-lead mt-10">Last updated: <!-- LAST_UPDATED_START --> 2026-08-16T14:18:45.963Z <!-- LAST_UPDATED_END --></h2>
+                           <h2 class="title-lead mt-10">Last updated: <!-- LAST_UPDATED_START --> 2026-08-16T12:47:51.006Z <!-- LAST_UPDATED_END --></h2>
                         </div>
                      </div>
                   </div>
@@ -199,7 +199,7 @@
                                    borderWidth: 1
                                  },{
                                    label: '2026',
-                                   data: [141,166,206,223,251,276,350,/* TOTAL_ALLOC_GA_START */ 394 /* TOTAL_ALLOC_GA_END */],
+                                   data: [141,166,206,223,251,276,350,/* TOTAL_ALLOC_GA_START */ 409 /* TOTAL_ALLOC_GA_END */],
                                    borderWidth: 1
                                  }]
                                },
@@ -243,7 +243,13 @@
                                  },
                                  {
                                    label: 'Allocated',
-                                   data: [/* TOTAL_ALLOC_GA_START */ 394 /* TOTAL_ALLOC_GA_END */,/* TOTAL_ALLOC_ORGANISER_START */ 5 /* TOTAL_ALLOC_ORGANISER_END */,/* TOTAL_ALLOC_CREW_START */ 16 /* TOTAL_ALLOC_CREW_END */,/* TOTAL_ALLOC_SPEAKER_START */ 19 /* TOTAL_ALLOC_SPEAKER_END */,/* TOTAL_ALLOC_SPONSOR_START */ 17 /* TOTAL_ALLOC_SPONSOR_END */,/* TOTAL_ALLOC_VILLAGE_START */ 1 /* TOTAL_ALLOC_VILLAGE_END */,/* TOTAL_ALLOC_VENDOR_START */ 4 /* TOTAL_ALLOC_VENDOR_END */,/* TOTAL_ALLOC_PRESS_START */ 1 /* TOTAL_ALLOC_PRESS_END */],
+                                   data: [/* TOTAL_ALLOC_GA_START */ 409 /* TOTAL_ALLOC_GA_END */,/* TOTAL_ALLOC_ORGANISER_START */ 5 /* TOTAL_ALLOC_ORGANISER_END */,/* TOTAL_ALLOC_CREW_START */ 16 /* TOTAL_ALLOC_CREW_END */,/* TOTAL_ALLOC_SPEAKER_START */ 19 /* TOTAL_ALLOC_SPEAKER_END */,/* TOTAL_ALLOC_SPONSOR_START */ 17 /* TOTAL_ALLOC_SPONSOR_END */,/* TOTAL_ALLOC_VILLAGE_START */ 1 /* TOTAL_ALLOC_VILLAGE_END */,/* TOTAL_ALLOC_VENDOR_START */ 4 /* TOTAL_ALLOC_VENDOR_END */,/* TOTAL_ALLOC_PRESS_START */ 1 /* TOTAL_ALLOC_PRESS_END */],
+                                   borderWidth: 1
+
+                                 },
+                                 {
+                                   label: 'Scanned in',
+                                   data: [310,5,16,18,17,1,3,0],
                                    borderWidth: 1
 
                                  }]
@@ -274,7 +280,7 @@
                                  labels: ['Available', 'Allocated', 'Scanned in'],
                                  datasets: [{
                                    label: 'Tickets',
-                                   data: [/* PIF_START */ 50 /* PIF_END */,35],
+                                   data: [/* PIF_START */ 50 /* PIF_END */,35, 27],
                                    borderWidth: 1
                                  }]
                                },
@@ -462,20 +468,20 @@
                         </div>
                      </div>
                      
-                     <!--<div class="col-sm-8 text-center mt-50">
+                     <div class="col-sm-offset-2 col-sm-8 text-center mt-50">
                         <div>
                            <h2 class="title-lead">Check-ins by time</h2>
-                           <canvas id="myChart15"></canvas>
+                           <canvas id="myChart16"></canvas>
                            <script>
-                              const ctx15 = document.getElementById('myChart15');
+                              const ctx16 = document.getElementById('myChart16');
 
-                              new Chart(ctx15, {
+                              new Chart(ctx16, {
                                type: 'line',
                                data: {
-                                 labels: ['07:20', '07:30', '07:40', '08:20', '08:30', '08:40', '09:00', '09:10', '09:20', '09:30', '09:40', '09:50', '10:00', '10:10', '10:20', '10:30', '10:40', '10:50', '11:00', '11:10', '11:20', '11:30', '11:40', '12:00', '12:10', '12:20', '12:40', '12:50', '13:50', '14:00', '14:10', '14:20', '14:30', '15:10', '12:10', '12:20', '22:40'],
+                                 labels: ['07:00','07:20','07:25','07:45','08:00','08:05','08:10','08:20','08:40','08:45','08:50','08:55','09:00','09:05','09:10','09:15','09:20','09:25','09:30','09:35','09:40','09:45','09:50','09:55','10:00','10:05','10:10','10:15','10:20','10:25','10:30','10:35','10:40','10:50','10:55','11:00','11:05','11:15','11:20','11:25','11:30','11:35','11:40','11:45','11:50','11:55','12:05','12:10','12:15','12:20','12:25','12:40','12:45','12:50','12:55','13:10','13:30','13:35','13:40','13:55','14:25','15:35','15:45','15:50','16:30'],
                                  datasets: [{
                                    label: 'Check-in time',
-                                   data: [],
+                                   data: [6,7,2,1,6,2,1,3,5,6,4,3,58,19,9,15,17,17,22,19,10,13,10,15,7,5,8,6,3,1,7,5,5,2,2,1,3,6,3,4,2,1,1,2,1,1,1,2,1,2,1,2,1,2,1,1,2,1,1,2,1,1,1,2,3],
                                    borderWidth: 1
                                  }]
                                },
@@ -498,7 +504,7 @@
                               });
                            </script>
                         </div>
-                     </div>-->
+                     </div>
                   </div>
                   <div class="row pt-120">
                      <div class="col-sm-12 text-center">
