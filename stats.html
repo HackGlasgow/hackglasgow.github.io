@@ -3,17 +3,17 @@
       <head>
          <meta charset="utf-8">
          <title>Hack Glasgow | Stats</title>
-         <meta name="title" content="Hack Glasgow | Saturday August 15th 2026" />
-         <meta name="description" content="A hacker conference for the community, by the community based in Glasgow. Next scheduled for 15th August 2026.">
+         <meta name="title" content="Hack Glasgow" />
+         <meta name="description" content="A hacker conference for the community, by the community based in Glasgow">
          <meta property="og:type" content="website" />
          <meta property="og:url" content="https://hackglasgow.live/" />
-         <meta property="og:title" content="Hack Glasgow | Saturday August 15th 2026" />
-         <meta property="og:description" content="A hacker conference for the community, by the community based in Glasgow. Next scheduled for 15th August 2026." />
+         <meta property="og:title" content="Hack Glasgow" />
+         <meta property="og:description" content="A hacker conference for the community, by the community based in Glasgow" />
          <meta property="og:image" content="https://hackglasgow.live/img/metatag.png" />
          <meta property="twitter:card" content="summary_large_image" />
          <meta property="twitter:url" content="https://hackglasgow.live" />
-         <meta property="twitter:title" content="Hack Glasgow | Saturday August 15th 2026" />
-         <meta property="twitter:description" content="A hacker conference for the community, by the community based in Glasgow. Next scheduled for 15th August 2026." />
+         <meta property="twitter:title" content="Hack Glasgow" />
+         <meta property="twitter:description" content="A hacker conference for the community, by the community based in Glasgow" />
          <meta property="twitter:image" content="https://hackglasgow.live/img/metatag.png" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
@@ -480,18 +480,36 @@
                                data: {
                                  labels: ['07:00','07:20','07:25','07:45','08:00','08:05','08:10','08:20','08:40','08:45','08:50','08:55','09:00','09:05','09:10','09:15','09:20','09:25','09:30','09:35','09:40','09:45','09:50','09:55','10:00','10:05','10:10','10:15','10:20','10:25','10:30','10:35','10:40','10:50','10:55','11:00','11:05','11:15','11:20','11:25','11:30','11:35','11:40','11:45','11:50','11:55','12:05','12:10','12:15','12:20','12:25','12:40','12:45','12:50','12:55','13:10','13:30','13:35','13:40','13:55','14:25','15:35','15:45','15:50','16:30'],
                                  datasets: [{
-                                   label: 'Check-in time',
-                                   data: [6,7,2,1,6,2,1,3,5,6,4,3,58,19,9,15,17,17,22,19,10,13,10,15,7,5,8,6,3,1,7,5,5,2,2,1,3,6,3,4,2,1,1,2,1,1,1,2,1,2,1,2,1,2,1,1,2,1,1,2,1,1,1,2,3],
+                                   label: 'General Admission',
+                                   data: [0,1,0,0,1,0,0,0,2,2,0,0,54,17,9,12,16,16,20,19,10,12,9,14,6,5,7,5,3,1,7,5,5,2,2,1,3,6,2,4,2,1,1,2,1,1,1,2,1,2,1,1,0,2,1,1,2,1,1,2,1,1,1,2,3],
+                                   borderWidth: 1
+                                 },{
+                                   label: 'Crew',
+                                   data: [4,3,2,0,3,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                                   borderWidth: 1
+                                 },{
+                                   label: 'Organisers',
+                                   data: [2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                                   borderWidth: 1
+                                 },{
+                                   label: 'Speakers',
+                                   data: [0,0,0,0,0,0,1,0,1,1,3,1,4,1,0,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],
+                                   borderWidth: 1
+                                 },{
+                                   label: 'Sponsors',
+                                   data: [0,0,0,1,1,2,0,0,0,2,1,2,0,1,0,2,1,0,2,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                                   borderWidth: 1
+                                 },{
+                                   label: 'Villages',
+                                   data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                                   borderWidth: 1
+                                 },{
+                                   label: 'Vendors',
+                                   data: [0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                                    borderWidth: 1
                                  }]
                                },
                                options: {
-                                 backgroundColor: [
-                                    'rgba(75, 192, 192, 0.5)'
-                                    ],
-                                 borderColor: [
-                                    'rgb(75, 192, 192)',
-                                    ],
                                  scales: {
                                    y: {
                                      beginAtZero: true,
