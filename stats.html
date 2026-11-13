@@ -219,8 +219,62 @@
                   <div class="row pt-120">
                      <div class="col-sm-12 text-center">
                         <div>
+                           <h2 class="title">Hack Glasgow 2027</h2>
+                           <p>Stats are subject to change.</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="row">
+
+                     <div class="col-sm-offset-1 col-sm-4 text-center mt-50">
+                        <div>
+                           <h2 class="title-lead">Finances</h2>
+                           <canvas id="myChart17"></canvas>
+                           <script>
+                              const ctx17 = document.getElementById('myChart17');
+
+                              new Chart(ctx17, {
+                               type: 'pie',
+                               data: {
+                                 labels: ['a'],
+                                 datasets: [{
+                                   label: 'Cost',
+                                   data: ['1'],
+                                   borderWidth: 1
+                                 }]
+                               },
+                               options: {
+                                 plugins: {
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function(context) {
+                                                let label = context.dataset.label || '';
+
+                                                if (label) {
+                                                    label += ': ';
+                                                }
+                                                if (context.parsed !== null) {
+                                                    label += new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(context.parsed);
+                                                }
+                                                return label;
+                                            }
+                                        }
+                                    }
+                                 }
+                               },
+                              });
+                           </script>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- 2027 End -->
+
+                  <!-- 2026 Start -->
+                  <div class="row pt-120">
+                     <div class="col-sm-12 text-center">
+                        <div>
                            <h2 class="title">Hack Glasgow 2026</h2>
-                           <p>Stats are still being collected for the 2026 event so may change regularly.</p>
                         </div>
                      </div>
                   </div>
@@ -429,7 +483,7 @@
 
                      <div class="col-sm-offset-1 col-sm-4 text-center mt-50">
                         <div>
-                           <h2 class="title-lead">Finances (in progress)</h2>
+                           <h2 class="title-lead">Finances</h2>
                            <canvas id="myChart13"></canvas>
                            <script>
                               const ctx13 = document.getElementById('myChart13');
